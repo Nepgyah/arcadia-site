@@ -9,4 +9,14 @@ section {
         flex-direction: column;
         row-gap: 5rem;
     }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+
+        .mini-title {
+            font-size: .78rem;
+        }
+    }
 }

@@ -31,7 +31,7 @@ export default function Page() {
         </div>
       </div>
       
-      <section id='catchphrase' className='bg-arc-accent clr-txt-light'>
+      <section id='catchphrase' className='clr-txt-light'>
         <div className='wrapper'>
           <div id='part-one'>
             <div>
@@ -51,6 +51,52 @@ export default function Page() {
               <FadeIn direction='left'>
                 <img src="/pages/home/catchphrase-two.png" alt="" />
               </FadeIn>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='sponsor' >
+        <div className='wrapper'>
+          <div>
+            <div id='sponsor-container'>
+              <div className='sponsor-card'>
+                <img src="/sponsors/eagle-jump.png" alt="" />
+              </div>
+              <div className='sponsor-card'>
+                <img src="/sponsors/astral-express.png" alt="" />
+              </div>
+              <div className='sponsor-card'>
+                <img src="/sponsors/aniplex-white.svg" alt="" />
+              </div>
+
+              <div className='sponsor-card'>
+                <img src="/sponsors/fromsoft.png" alt="" />
+              </div>
+              <div className='sponsor-card'>
+                <img src="/sponsors/hoyoverse-white.png" alt="" />
+              </div>
+              <div className='sponsor-card'>
+                <img src="/sponsors/jc-staff.png" alt="" />
+              </div>
+
+              <div className='sponsor-card'>
+                <img src="/sponsors/myanimelist.svg" alt="" />
+              </div>
+              <div className='sponsor-card'>
+                <img src="/sponsors/nexon-white.png" alt="" />
+              </div>
+              <div className='sponsor-card'>
+                <img src="/sponsors/yostar-white.svg" alt="" />
+              </div>
+            </div>
+            <div className='center-v'>
+              <div className='text clr-txt-light'>
+                <p className='mini-title'>Arcadia Partners</p>
+                <h2>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
+                <p>Anime Studios, Game Developers, and more collaborate with Arcadia to build something special. </p>
+                <p><b>Names used here are purely fictional for Arcadia/D2X world building. These companies do not sponsor or endorse Arcadia.</b></p>
+              </div>
             </div>
           </div>
         </div>
