@@ -1,0 +1,9 @@
+.chakra-button {
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 4px rgba(#000000, .25);
+
+    &.primary {
+        background-color: #C54B61;
+    }
+}

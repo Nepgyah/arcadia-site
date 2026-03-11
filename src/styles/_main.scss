@@ -1,2 +1,15 @@
 @forward './base/';
 @forward 'components';
+@use './abstracts/variables' as *;
+@use 'sass:map';
+@forward './themes/theme';
+
+html {
+    background-color: #FFF6E1;
+
+    body {
+        main {
+            min-height: 100dvh;
+        }
+    }
+}
