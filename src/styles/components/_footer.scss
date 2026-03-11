@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as *;
+@use 'sass:map';
+
+footer {
+    background-color: map-get($colors, arc-base );
+    padding: 3rem 20px;
+    
+    #wrapper {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    #overview {
+        img {
+            height: 64px;
+            margin: auto;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+
+    #contact {
+        > div {
+            margin-top: 1rem;
+            display: flex;
+            column-gap: .5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    footer {
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        #overview {
+            img {
+                margin-left: 0;
+            }
+        }
+    }
+}
