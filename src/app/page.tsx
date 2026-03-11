@@ -1,12 +1,12 @@
 import '@/styles/pages/_home.scss';
 import { Button } from '@chakra-ui/react';
-import HeroSlider from './hereSlider';
+import HeroSlider from './heroSlider';
 
 export default function Page() {
   return (
     <div id="page-home">
       
-      <div id="hero">
+      <section id="hero">
         <img className='bg' src="/pages/home/hero-background.png" alt="" />
         <div className='mask'></div>
         <img id='furina' className='element desktop-only' src="/pages/home/queen_one.png" alt="" />
@@ -20,12 +20,16 @@ export default function Page() {
                   Explore Arcadia
                 </Button>
               </div>
+              <div className='bg-arc-base-dark clr-txt-light p-a-md border-radius-md shadow'>
+                <p>Arcadia Server Status</p>
+              </div>
               <div id='main-points'></div>
             </div>
           </div>
           <div></div>
         </div>
-      </div>
+      </section>
+      
     </div>
   )
 }

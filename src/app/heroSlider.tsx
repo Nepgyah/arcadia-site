@@ -27,7 +27,7 @@ export default function HeroSlider() {
     }, [])
 
     return (
-        <span id="slider-container" className="bg-arc-accent">
+        <span id="slider-container" className="bg-arc-accent border-radius-md shadow">
             <span id="word" className="clr-txt-light">{words[index]}</span>
         </span>
     )

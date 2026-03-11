@@ -7,3 +7,33 @@
         background-color: #C54B61;
     }
 }
+
+.border-radius {
+    &-sm { border-radius: 8px; }
+    &-md { border-radius: 12px; }
+    &-lg { border-radius: 18px; }
+}
+
+.shadow {
+    box-shadow: 0 4px 4px rgba(#000000, .25);
+}
+
+.flex {
+    display: flex;
+
+    &-column {
+        flex-direction: column;
+    }
+
+    &-row-gap-sm {
+        row-gap: 1rem;
+    }
+
+    &-row-gap-md {
+        row-gap: 2rem;
+    }
+
+    &-row-gap-lg {
+        row-gap: 2.5rem;
+    }
+}

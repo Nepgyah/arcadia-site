@@ -4,12 +4,56 @@
 
 @each $name, $color in $colors {
     .clr-#{$name} {
-        color: $color
+        color: $color !important
     }
 }
 
 @each $name, $color in $colors {
     .bg-#{$name} {
         background-color: $color
+    }
+}
+
+@each $name, $space in $spacing {
+    .p-a-#{$name} {
+        padding: $space;
+    }
+
+    .p-l-#{$name} {
+        padding-left: $space;
+    }
+
+    .p-r-#{$name} {
+        padding-right: $space;
+    }
+
+    .p-t-#{$name} {
+        padding-top: $space;
+    }
+
+    .p-b-#{$name} {
+        padding-bottom: $space;
+    }
+}
+
+@each $name, $space in $spacing {
+    .m-a-#{$name} {
+        padding: $space;
+    }
+
+    .m-l-#{$name} {
+        margin-left: $space;
+    }
+
+    .m-r-#{$name} {
+        margin-right: $space;
+    }
+
+    .m-t-#{$name} {
+        margin-top: $space;
+    }
+
+    .m-b-#{$name} {
+        margin-bottom: $space;
     }
 }
