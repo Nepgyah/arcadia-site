@@ -39,12 +39,12 @@ export default function Page() {
                 <img src="/pages/home/catchphrase-one.png" alt="" />
               </FadeIn>
             </div>
-            <div>
+            <div className='center-v'>
               <h2>Your Otaku</h2>
             </div>
           </div>
           <div id='part-two'>
-            <div>
+            <div className='center-b'>
               <h2 className='clr-arc-highlight'>Sanctuary</h2>
             </div>
             <div>
