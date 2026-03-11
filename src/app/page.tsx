@@ -1,12 +1,13 @@
 import '@/styles/pages/_home.scss';
 import { Button } from '@chakra-ui/react';
 import HeroSlider from './heroSlider';
+import FadeIn from '@/components/animation/fadeIn';
 
 export default function Page() {
   return (
     <div id="page-home">
       
-      <section id="hero">
+      <div id="hero">
         <img className='bg' src="/pages/home/hero-background.png" alt="" />
         <div className='mask'></div>
         <img id='furina' className='element desktop-only' src="/pages/home/queen_one.png" alt="" />
@@ -28,8 +29,32 @@ export default function Page() {
           </div>
           <div></div>
         </div>
-      </section>
+      </div>
       
+      <section id='catchphrase' className='bg-arc-accent clr-txt-light'>
+        <div className='wrapper'>
+          <div id='part-one'>
+            <div>
+              <FadeIn direction='right'>
+                <img src="/pages/home/catchphrase-one.png" alt="" />
+              </FadeIn>
+            </div>
+            <div>
+              <h2>Your Otaku</h2>
+            </div>
+          </div>
+          <div id='part-two'>
+            <div>
+              <h2 className='clr-arc-highlight'>Sanctuary</h2>
+            </div>
+            <div>
+              <FadeIn direction='left'>
+                <img src="/pages/home/catchphrase-two.png" alt="" />
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
