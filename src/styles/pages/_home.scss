@@ -1,6 +1,8 @@
 #page-home {
     #hero {
-
+        .mask {
+            background: linear-gradient(to bottom, rgba(#59304D, 0) 50%, #59304D 100%);
+        }
     }
 }
 
@@ -11,6 +13,10 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 column-gap: 2rem;
+            }
+
+            #furina {
+                right: 20px;
             }
         }
     }

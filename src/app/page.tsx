@@ -1,16 +1,19 @@
 import '@/styles/pages/_home.scss';
 import { Button } from '@chakra-ui/react';
+import HeroSlider from './hereSlider';
 
 export default function Page() {
   return (
     <div id="page-home">
       
       <div id="hero">
-        <img className='bg-element' src="/pages/home/hero-background.png" alt="" />
+        <img className='bg' src="/pages/home/hero-background.png" alt="" />
+        <div className='mask'></div>
+        <img id='furina' className='element desktop-only' src="/pages/home/queen_one.png" alt="" />
         <div className="wrapper">
           <div>
             <div className='hero-text'>
-              <h1>Your Anime <br />Your Way</h1>
+              <h1>Your <HeroSlider /> <br />Your Way</h1>
               <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p>
               <div className="cta-container">
                 <Button className='primary'>
