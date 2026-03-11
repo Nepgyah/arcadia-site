@@ -1,15 +1,24 @@
-@forward './base/';
+@forward 'abstracts';
+@forward 'base';
 @forward 'components';
+@forward 'layout';
+@forward './themes/theme';
 @use './abstracts/variables' as *;
 @use 'sass:map';
-@forward './themes/theme';
 
 html {
     background-color: #FFF6E1;
 
     body {
+        position: relative;
+
         main {
+            position: relative;
+            z-index: 1;
+            padding-top: 90px;
             min-height: 100dvh;
+            font-size: 18px;
+            color: map.get($colors, txt-dark);
         }
     }
 }
