@@ -1,0 +1,15 @@
+@use './variables' as *;
+@use "sass:map";
+@use "sass:string";
+
+@each $name, $color in $colors {
+    .clr-#{$name} {
+        color: $color
+    }
+}
+
+@each $name, $color in $colors {
+    .bg-#{$name} {
+        color: $color
+    }
+}
