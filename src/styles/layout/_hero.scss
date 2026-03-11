@@ -1,0 +1,73 @@
+@use '../abstracts/variables' as *;
+@use 'sass:map';
+
+#hero {
+    position: relative;
+    min-height: 100dvh;
+    overflow-y: hidden;
+    
+    
+    .mask {
+        position: absolute;
+        z-index: 3;
+        min-height: inherit;
+        width: 100%;
+    }
+    
+    .bg {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        object-fit: cover;
+    }
+    
+    .element {
+        position: absolute;
+        z-index: 2;
+    }
+    .wrapper {
+        padding: 4rem 20px;
+        max-width: 1440px;
+        margin: auto;
+        position: relative;
+        z-index: 4;
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            h1 {
+                display: inline;
+            }
+            #slider-container {
+                padding: .25rem 1rem;
+                display: inline-table;
+
+                #word {
+                    display: inline-block;
+                    transition: opacity .4s ease-in-out, transform .4s;
+
+                    &.fade-in {
+                        opacity: 1;
+                        transform: translateY(0px)
+                    }
+
+                    &.fade-out {
+                        opacity: 0;
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    #hero {
+        min-height: 800px;
+    }
+}
