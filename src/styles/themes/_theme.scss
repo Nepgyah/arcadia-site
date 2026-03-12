@@ -37,3 +37,23 @@
         row-gap: 2.5rem;
     }
 }
+
+.center {
+    &-h { 
+        display: flex;
+        justify-content: center;
+    }
+
+    &-v {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
