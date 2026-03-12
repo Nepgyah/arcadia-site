@@ -9,8 +9,6 @@
     }
 
     #catchphrase {
-        background-color: #59304D;
-
         #part-one, #part-two {
             display: flex;
             flex-direction: column;
@@ -27,8 +25,6 @@
     }
 
     #sponsor {
-        background: linear-gradient(to bottom, #59304D, map.get($colors, arc-base));
-
         #broken-circle {
             top: -50px;
         }
