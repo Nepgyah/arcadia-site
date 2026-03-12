@@ -2,6 +2,8 @@ import '@/styles/pages/_home.scss';
 import { Button } from '@chakra-ui/react';
 import HeroSlider from './heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
+import IconFeature from '@/components/iconFeature';
+import { Blocks, Layers, LayoutTemplate, Link, TestTube, Webhook } from 'lucide-react';
 
 export default function Page() {
   return (
@@ -206,7 +208,30 @@ export default function Page() {
             </div>
           </div>
           <div id='tech-feats'>
-
+            <div>
+              <IconFeature 
+                icon={Webhook}
+                title='Flexible API'
+                description='A combination of REST and Graphql allow for optimizated requests for otaku data.'
+              />
+              <IconFeature 
+                icon={LayoutTemplate}
+                title='Responive Platform'
+                description='No matter the device, Arcadia aims to make its displays versitile for any device.'
+              />
+            </div>
+            <div>
+              <IconFeature 
+                icon={Layers}
+                title='Modular Architecture'
+                description="Arcadia's foundation is through layered architecture, allowing for ease of integration and testing."
+              />
+              <IconFeature 
+                icon={Link}
+                title='D2X Integration'
+                description='With D2X serving as the auth server, Arcadia allows for one account for all apps.'
+              />
+            </div>
           </div>
         </div>
       </section>
