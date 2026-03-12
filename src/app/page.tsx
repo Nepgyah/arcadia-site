@@ -101,6 +101,74 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <section id='primary-apps' className='bg-arc-base clr-txt-light'>
+        <div className='wrapper'>
+          <div>
+            <div id='top-half'>
+              <div className='text'>
+                <p className='mini-title'>Arcadia Apps</p>
+                <h2>Essentials for the <span className='clr-arc-highlight'>Ultimate</span> Otaku</h2>
+                <p>Your all-in-one toolkit for tracking, streaming, gaming, and shopping. These flagship apps form the heart of your ultimate otaku experience.</p>
+              </div>
+              <FadeIn direction='left'>
+                <div id='miru-card' className='app-card bg-miru-base clr-txt-dark p-a-md shadow border-radius-md'>
+                  <h3>Miru - みる [見る]</h3>
+                  <p>The Ultimate Anime App</p>
+                  <img src="/pages/home/apps/miru-mascots.png" alt="" />
+                  <div className='circle bg-miru-dark'></div>
+                </div>
+              </FadeIn>
+            </div>
+
+            <div id='bottom-half'>
+
+              <div id='left-half'>
+                <FadeIn direction='right'>
+                  <div id='yomu-card' className='app-card bg-yomu-base clr-txt-dark p-a-md shadow border-radius-md'>
+                    <h3>Yomu - よる [読む]</h3>
+                    <p>Stories that stay with you</p>
+                    <div className='circle'></div>
+                    <img src="/pages/home/apps/yomu-mascots.png" alt="" />
+                    <div className='circle bg-yomu-dark'></div>
+                  </div>
+                </FadeIn>
+                <FadeIn direction='right' delay={.3}>
+                  <div id='asobu-card' className='app-card bg-asobu-base clr-txt-light p-a-md shadow border-radius-md'>
+                    <h3>Asobu - あそぶ [遊ぶ]</h3>
+                    <p>Gaming adventures begin here</p>
+                    <div className='circle'></div>
+                    <img src="/pages/home/apps/asobu-mascots.png" alt="" />
+                    <div className='circle bg-asobu-dark'></div>
+                  </div>
+                </FadeIn>
+              </div>
+
+              <div id='right-half'>
+                <FadeIn direction='left'>
+                  <div id='kiku-card' className='app-card bg-kiku-base clr-txt-dark p-a-md shadow border-radius-md'>
+                    <h3>Kiku - きく [聞く]</h3>
+                    <p>Gaming adventures begin here</p>
+                    <div className='circle'></div>
+                    <img src="/pages/home/apps/kiku-mascots.png" alt="" />
+                    <div className='circle bg-kiku-dark'></div>
+                  </div>            
+                </FadeIn>
+                <FadeIn direction='left' delay={.4}>
+                  <div id='iku-card' className='app-card bg-iku-base clr-txt-light p-a-md shadow border-radius-md'>
+                    <h3>Iku - いく [行く]</h3>
+                    <p>Make every meetup a adventure</p>
+                    <div className='circle'></div>
+                    <img src="/pages/home/apps/iku-mascots.png" alt="" />
+                    <div className='circle bg-iku-dark'></div>
+                  </div>
+                </FadeIn>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
