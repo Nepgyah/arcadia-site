@@ -29,14 +29,18 @@ section {
 
         &.text--white {
             color: map.get($colors, txt-light);
-
+            
             h2 {
                 color: map.get($colors, txt-light);
             }
         }
-
+        
         .mini-title {
             font-size: .78rem;
+        }
+        
+        &--half {
+            width: 50%;
         }
     }
 }

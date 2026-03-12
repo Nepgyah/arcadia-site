@@ -1,5 +1,5 @@
 import '@/styles/pages/_home.scss';
-import { Button } from '@chakra-ui/react';
+import { Button, Card } from '@chakra-ui/react';
 import HeroSlider from './heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
@@ -178,6 +178,44 @@ export default function Page() {
         </section>
       </div>
 
+      <section id='testimonials'>
+        <div className='wrapper'>
+          <div className='text text--half'>
+            <p className='mini-title'>Arcadia Testimonials</p>
+            <h2>Otakus Agree, Arcadia is a must for Fanatics</h2>
+          </div>
+          
+          <div className='testimonial-container'>
+            <Testimonial 
+              id='keanu'
+              person='Keanu Reaves'
+              src='keanu.avif'
+              description='I’ve been a fan of anime for years, and Arcadia feels like the ultimate place for fans. Their app Asobu makes modding games a breeze.'
+            />
+            <Testimonial 
+              id='lebron'
+              person='LeBron James'
+              src='lebron.jpg'
+              description='Arcadia is signature, just like my taco tuesdays. I’ve used Tsunagu and Shiru to finally understand what Bronny meant by “Diamond on Siege”.'
+            />
+            <Testimonial 
+              id='aoba'
+              flip
+              person='Aoba'
+              src='aoba.png'
+              description='Arcadia allowed me to find my dream games from my favorite company. When I heard they were partnering up, I couldnt let the opporitunity slip. Thank you Team Arcadia!'
+            />
+            <Testimonial 
+              id='jamaal'
+              flip
+              person='Jamaal Williams'
+              src='jamaal.jpg'
+              description='This is like the ultimate training ground for otaku. Everything you need: tracking, merch, community. All in one place.'
+            />
+          </div>
+        </div>
+      </section>
+
       <section id='stack'>
         <div className='wrapper'>
           <div id='technologies'>
@@ -251,6 +289,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id='d2x'>
         <div className='wrapper'>
           <div className='text'>
@@ -270,6 +309,25 @@ export default function Page() {
         </div>
       </section>
 
+    </div>
+  )
+}
+
+function Testimonial( 
+  {
+    id, person, src, description, flip = false
+  } : {
+    id: string, person: string, src: string, description: string, flip?: boolean
+}) {
+  return (
+    <div id={id} className={`testimonial ${flip && 'flip'}`}>
+      <img className='border-radius-md shadow' src={`/pages/home/testimonials/${src}`} alt="" />
+      <Card.Root className='p-a-lg shadow border-radius-md'>
+        <Card.Body gap={2}>
+          <Card.Title>{person}</Card.Title>
+          <Card.Description>{description}</Card.Description>
+        </Card.Body>
+      </Card.Root>
     </div>
   )
 }

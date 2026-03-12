@@ -144,6 +144,43 @@
         }
     }
 
+    #testimonials {
+        .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            
+            #keanu { order: 1}
+            #lebron { order: 3 }
+            #aoba { order: 2}
+            #jamaal { order: 4; }
+
+            .testimonial {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1rem;
+                
+                .chakra-card__root {
+                    background-color: map.get($colors, arc-base);
+                    border: none;
+                }
+
+                &.flip {
+                    img {
+                        order: 2;
+                    }
+                    .chakra-card__root {
+                        order: 1;
+                    }
+                }
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
     #stack {
         #technologies {
             display: flex;
@@ -274,6 +311,19 @@
                 #asobu-card, #kiku-card {
                     height: 250px
                 }
+            }
+        }
+
+        #testimonials {
+            .testimonial-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                
+                #keanu { order: 1}
+                #lebron { order: 2 }
+                #aoba { order: 3 }
+                #jamaal { order: 4 }
             }
         }
 
