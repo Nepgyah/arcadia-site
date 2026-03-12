@@ -135,6 +135,35 @@
             }
         }
     }
+
+    #stack {
+        #technologies {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            #stack-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                align-items: center;
+                justify-items: center;
+
+                > div {
+                    height: 144px;
+                    width: 144px;
+                    border-radius: 12px;
+                    background-color: map.get($colors, arc-base);
+                    box-shadow: 0 4px 4px #bbbbbb;
+
+                    img {
+                        width: auto;
+                        max-height: 120px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -226,6 +255,17 @@
                 img {
                     height: 75%;
                     width: 75%;
+                }
+            }
+        }
+
+        #stack {
+            #technologies {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 4rem;
+
+                #stack-container {
                 }
             }
         }

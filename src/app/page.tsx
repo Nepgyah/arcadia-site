@@ -176,6 +176,41 @@ export default function Page() {
         </div>
       </section>
 
+      <section id='stack'>
+        <div className='wrapper'>
+          <div id='technologies'>
+            <div className='text'>
+              <p className='mini-title'>Tech Ecosystem</p>
+              <h2>Modern Tech Defines Arcardia</h2>
+              <p>Arcadia is being built with the most reliable and trusted technologies on the market. The result: a robust and modern platform that hosts the best Otaku ecosystem there is.</p>
+            </div>
+            <div id='stack-container'>
+              <div className='center-b'> 
+                <img src="/pages/home/stack/next.png" alt="" />
+              </div>
+              <div className='center-b'> 
+                <img src="/pages/home/stack/chakra.png" alt="" />
+              </div>
+              <div className='center-b'> 
+                <img src="/pages/home/stack/zustand.svg" alt="" />
+              </div>
+              <div className='center-b'> 
+                <img src="/pages/home/stack/python.png" alt="" />
+              </div>
+              <div className='center-b'> 
+                <img src="/pages/home/stack/django.png" alt="" />
+              </div>
+              <div className='center-b'> 
+                <img src="/pages/home/stack/graphql.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div id='tech-feats'>
+
+          </div>
+        </div>
+      </section>
+
       <section id='d2x'>
         <div className='wrapper'>
           <div className='text'>
