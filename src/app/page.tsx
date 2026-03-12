@@ -236,6 +236,21 @@ export default function Page() {
         </div>
       </section>
 
+      <section id='cc-highlight' className='bg-arc-accent-dark'>
+        <div className='wrapper'>
+          <FadeIn direction='right'>
+            <img src="/pages/home/robin-splash.png" />
+          </FadeIn>
+          <div>
+            <div className='text clr-txt-light'>
+              <p className='mini-title'>Featured Content Creator</p>
+              <h2 className='clr-txt-light'>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
+              <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
+              <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id='d2x'>
         <div className='wrapper'>
           <div className='text'>

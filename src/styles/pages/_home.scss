@@ -180,6 +180,13 @@
             }
         }
     }
+
+    #cc-highlight {
+        img {
+            max-height: 400px;
+            margin: auto;
+        }
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -287,11 +294,25 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     column-gap: 2rem;
-                    
+
                     &:first-of-type {
                         margin-bottom: 4rem;
                     }
                 }
+            }
+        }
+
+        #cc-highlight {
+
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 4rem;
+            }
+
+            img {
+                max-height: 100%;
+                margin: auto;
             }
         }
     }
