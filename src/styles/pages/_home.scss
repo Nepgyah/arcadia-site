@@ -21,6 +21,10 @@
     #sponsor {
         background: linear-gradient(to bottom, #59304D, map.get($colors, arc-base));
 
+        #broken-circle {
+            top: -50px;
+        }
+
         #sponsor-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -209,6 +213,19 @@
 
                 #asobu-card, #kiku-card {
                     height: 250px
+                }
+            }
+        }
+
+        #d2x {
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 4rem;
+
+                img {
+                    height: 75%;
+                    width: 75%;
                 }
             }
         }

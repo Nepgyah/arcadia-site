@@ -12,7 +12,7 @@ export default function Navbar() {
                 </div>
                 <div></div>
                 <div id="cta">
-                    <a>
+                    <a href="arcadia-platform.vercel.app" target="_blank">
                         <Button className="primary">
                             Visit Platform
                         </Button>

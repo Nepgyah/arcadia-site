@@ -17,9 +17,11 @@ export default function Page() {
               <h1>Your <HeroSlider /> <br />Your Way</h1>
               <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p>
               <div className="cta-container">
-                <Button className='primary'>
-                  Explore Arcadia
-                </Button>
+                <a href="arcadia-platform.vercel.app" target="_blank">
+                  <Button className='primary'>
+                    Explore Arcadia
+                  </Button>
+                </a>
               </div>
               <div className='bg-arc-base-dark clr-txt-light p-a-md border-radius-md shadow'>
                 <p>Arcadia Server Status</p>
@@ -56,7 +58,8 @@ export default function Page() {
         </div>
       </section>
 
-      <section id='sponsor' >
+      <section id='sponsor'>
+        <img id='broken-circle' className='element' src="/assets/broken-circle.svg" alt="" />
         <div className='wrapper'>
           <div>
             <div id='sponsor-container'>
@@ -93,7 +96,7 @@ export default function Page() {
             <div className='center-v'>
               <div className='text clr-txt-light'>
                 <p className='mini-title'>Arcadia Partners</p>
-                <h2>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
+                <h2 className='clr-txt-light'>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
                 <p>Anime Studios, Game Developers, and more collaborate with Arcadia to build something special. </p>
                 <p><b>Names used here are purely fictional for Arcadia/D2X world building. These companies do not sponsor or endorse Arcadia.</b></p>
               </div>
@@ -108,7 +111,7 @@ export default function Page() {
             <div id='top-half'>
               <div className='text'>
                 <p className='mini-title'>Arcadia Apps</p>
-                <h2>Essentials for the <span className='clr-arc-highlight'>Ultimate</span> Otaku</h2>
+                <h2 className='clr-txt-light'>Essentials for the <span className='clr-arc-highlight'>Ultimate</span> Otaku</h2>
                 <p>Your all-in-one toolkit for tracking, streaming, gaming, and shopping. These flagship apps form the heart of your ultimate otaku experience.</p>
               </div>
               <FadeIn direction='left'>
@@ -169,6 +172,26 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <section id='d2x'>
+        <div className='wrapper'>
+          <div className='text'>
+            <p className='mini-title'>Who We Are</p>
+            <h2>Born From Fandom, Forged With Passion</h2>
+            <p>Team Double Dragon was forged upon passion: passion for Esports and passion for doing things the right way and for the right things.</p>
+            <p>What started with what-ifs and no technical skill, Arcadia began with two friends, countless fandom debates, and a dream to build the otaku platform we always wished existed.</p>
+            <a href="https://d2x-site.vercel.app" target='_blank'>
+              <Button className='primary'>
+                Visit D2X Today
+              </Button>
+            </a>
+          </div>
+          <div className='center-b'>
+            <img src="/logos/d2x.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
     </div>
   )
 }
