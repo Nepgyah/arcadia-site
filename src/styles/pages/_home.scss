@@ -72,6 +72,10 @@
             position: relative;
             overflow: hidden;
             height: 200px;
+            
+            &.clr-txt-light {
+                color: map.get($colors, txt-light);
+            }
 
             h3, p {
                 position: relative;

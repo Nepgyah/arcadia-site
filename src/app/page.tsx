@@ -99,9 +99,9 @@ export default function Page() {
               </div>
             </div>
             <div className='center-v'>
-              <div className='text clr-txt-light'>
+              <div className='text text--white'>
                 <p className='mini-title'>Arcadia Partners</p>
-                <h2 className='clr-txt-light'>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
+                <h2>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
                 <p>Anime Studios, Game Developers, and more collaborate with Arcadia to build something special. </p>
                 <p><b>Names used here are purely fictional for Arcadia/D2X world building. These companies do not sponsor or endorse Arcadia.</b></p>
               </div>
@@ -110,13 +110,13 @@ export default function Page() {
         </div>
       </section>
 
-      <section id='primary-apps' className='bg-arc-base clr-txt-light'>
+      <section id='primary-apps' className='bg-arc-base'>
         <div className='wrapper'>
           <div>
             <div id='top-half'>
-              <div className='text'>
+              <div className='text text--white'>
                 <p className='mini-title'>Arcadia Apps</p>
-                <h2 className='clr-txt-light'>Essentials for the <span className='clr-arc-highlight'>Ultimate</span> Otaku</h2>
+                <h2>Essentials for the <span className='clr-arc-highlight'>Ultimate</span> Otaku</h2>
                 <p>Your all-in-one toolkit for tracking, streaming, gaming, and shopping. These flagship apps form the heart of your ultimate otaku experience.</p>
               </div>
               <FadeIn direction='left'>
@@ -242,9 +242,9 @@ export default function Page() {
             <img src="/pages/home/robin-splash.png" />
           </FadeIn>
           <div>
-            <div className='text clr-txt-light'>
+            <div className='text text--white'>
               <p className='mini-title'>Featured Content Creator</p>
-              <h2 className='clr-txt-light'>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
+              <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
               <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
               <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
             </div>
