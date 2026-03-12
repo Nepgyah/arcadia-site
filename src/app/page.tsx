@@ -17,14 +17,17 @@ export default function Page() {
               <h1>Your <HeroSlider /> <br />Your Way</h1>
               <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p>
               <div className="cta-container">
-                <a href="arcadia-platform.vercel.app" target="_blank">
+                <a href="https://arcadia-platform.vercel.app" target="_blank">
                   <Button className='primary'>
                     Explore Arcadia
                   </Button>
                 </a>
               </div>
               <div className='bg-arc-base-dark clr-txt-light p-a-md border-radius-md shadow'>
-                <p>Arcadia Server Status</p>
+                <p><b>Latest Release - Alpha v0.4</b></p>
+                <ul>
+                  <li>- Linked account system to D2X</li>
+                </ul>
               </div>
               <div id='main-points'></div>
             </div>
