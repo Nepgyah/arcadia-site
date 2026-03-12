@@ -23,4 +23,27 @@ nav {
             height: 48px;
         }
     }
+
+    #burger {
+        box-shadow: none;
+    }
+    
+    .chakra-drawer__content {
+        background-color: map.get($colors, arc-base);
+
+        .chakra-drawer__closeTrigger {
+            box-shadow: none;
+        }
+
+        .chakra-drawer__body {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            row-gap: 2rem;
+
+            .text-link {
+                box-shadow: none;
+            }
+        }
+    }
 }
