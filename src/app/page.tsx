@@ -5,6 +5,7 @@ import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
 import { Blocks, Layers, LayoutTemplate, Link, TestTube, Webhook } from 'lucide-react';
 import HomeCaseStudy from '@/components/pages/home/caseStudy';
+import { Tooltip } from '@/components/ui/tooltip';
 
 export default function Page() {
   return (
@@ -248,24 +249,36 @@ export default function Page() {
               <p>Arcadia is being built with the most reliable and trusted technologies on the market. The result: a robust and modern platform that hosts the best Otaku ecosystem there is.</p>
             </div>
             <div id='stack-container'>
-              <div className='center-b'> 
-                <img src="/pages/home/stack/next.png" alt="" />
-              </div>
-              <div className='center-b'> 
-                <img src="/pages/home/stack/chakra.png" alt="" />
-              </div>
-              <div className='center-b'> 
-                <img src="/pages/home/stack/zustand.svg" alt="" />
-              </div>
-              <div className='center-b'> 
-                <img src="/pages/home/stack/python.png" alt="" />
-              </div>
-              <div className='center-b'> 
-                <img src="/pages/home/stack/django.png" alt="" />
-              </div>
-              <div className='center-b'> 
-                <img src="/pages/home/stack/graphql.png" alt="" />
-              </div>
+              <Tooltip showArrow content="Next Js" positioning={{placement: 'top'}} >
+                <div className='center-b'> 
+                  <img src="/pages/home/stack/next.png" alt="" />
+                </div>
+              </Tooltip>
+              <Tooltip showArrow content="Chakra UI" positioning={{placement: 'top'}} >
+                <div className='center-b'> 
+                  <img src="/pages/home/stack/chakra.png" alt="" />
+                </div>
+              </Tooltip>
+              <Tooltip showArrow content="Zustand" positioning={{placement: 'top'}} >
+                <div className='center-b'> 
+                  <img src="/pages/home/stack/zustand.svg" alt="" />
+                </div>
+              </Tooltip>
+              <Tooltip showArrow content="Python" positioning={{placement: 'top'}} >
+                <div className='center-b'> 
+                  <img src="/pages/home/stack/python.png" alt="" />
+                </div>
+              </Tooltip>
+              <Tooltip showArrow content="Django" positioning={{placement: 'top'}} >
+                <div className='center-b'> 
+                  <img src="/pages/home/stack/django.png" alt="" />
+                </div>
+              </Tooltip>
+              <Tooltip showArrow content="Graphql" positioning={{placement: 'top'}} >
+                <div className='center-b'> 
+                  <img src="/pages/home/stack/graphql.png" alt="" />
+                </div>
+              </Tooltip>
             </div>
           </div>
           <div id='tech-feats'>
