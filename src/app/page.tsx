@@ -1,9 +1,10 @@
 import '@/styles/pages/_home.scss';
 import { Button, Card } from '@chakra-ui/react';
-import HeroSlider from './heroSlider';
+import HeroSlider from '../components/pages/home/heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
 import { Blocks, Layers, LayoutTemplate, Link, TestTube, Webhook } from 'lucide-react';
+import HomeCaseStudy from '@/components/pages/home/caseStudy';
 
 export default function Page() {
   return (
@@ -38,7 +39,7 @@ export default function Page() {
         </div>
       </div>
       
-      <div className='bg-gradient'>
+      <div className='bg-gradient-one'>
         <section id='catchphrase' className='clr-txt-light'>
           <div className='wrapper'>
             <div id='part-one'>
@@ -216,6 +217,28 @@ export default function Page() {
         </div>
       </section>
 
+      {/* At a glance */}
+
+      <div className='bg-gradient-one'>
+        <section id='cc-highlight'>
+          <div className='wrapper'>
+            <FadeIn direction='right'>
+              <img src="/pages/home/robin-splash.png" />
+            </FadeIn>
+            <div>
+              <div className='text text--white'>
+                <p className='mini-title'>Featured Content Creator</p>
+                <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
+                <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
+                <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <HomeCaseStudy />
+      </div>
+
       <section id='stack'>
         <div className='wrapper'>
           <div id='technologies'>
@@ -269,22 +292,6 @@ export default function Page() {
                 title='D2X Integration'
                 description='With D2X serving as the auth server, Arcadia allows for one account for all apps.'
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id='cc-highlight' className='bg-arc-accent-dark'>
-        <div className='wrapper'>
-          <FadeIn direction='right'>
-            <img src="/pages/home/robin-splash.png" />
-          </FadeIn>
-          <div>
-            <div className='text text--white'>
-              <p className='mini-title'>Featured Content Creator</p>
-              <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
-              <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
-              <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
             </div>
           </div>
         </div>

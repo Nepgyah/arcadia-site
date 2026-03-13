@@ -38,9 +38,15 @@ section {
         .mini-title {
             font-size: .78rem;
         }
-        
-        &--half {
-            width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    section {
+        .text {
+            &--half {
+                width: 50%;
+            }
         }
     }
 }
