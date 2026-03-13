@@ -38,29 +38,6 @@
             display: flex;
             flex-direction: column;
             row-gap: 2rem;
-
-            h1 {
-                display: inline;
-            }
-            #slider-container {
-                padding: .25rem 1rem;
-                display: inline-table;
-
-                #word {
-                    display: inline-block;
-                    transition: opacity .4s ease-in-out, transform .4s;
-
-                    &.fade-in {
-                        opacity: 1;
-                        transform: translateY(0px)
-                    }
-
-                    &.fade-out {
-                        opacity: 0;
-                        transform: translateY(-4px);
-                    }
-                }
-            }
         }
     }
     

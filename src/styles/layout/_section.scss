@@ -7,9 +7,12 @@ section {
 
     .element {
         position: absolute;
+        z-index: 1;
     }
 
     .wrapper {
+        position: relative;
+        z-index: 2;
         max-width: 1320px;
         margin: auto;
         padding: 0 20px;
@@ -29,14 +32,24 @@ section {
 
         &.text--white {
             color: map.get($colors, txt-light);
-
+            
             h2 {
                 color: map.get($colors, txt-light);
             }
         }
-
+        
         .mini-title {
             font-size: .78rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    section {
+        .text {
+            &--half {
+                width: 50%;
+            }
         }
     }
 }
