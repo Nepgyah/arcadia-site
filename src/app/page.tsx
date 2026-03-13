@@ -181,6 +181,7 @@ export default function Page() {
       </div>
 
       <section id='testimonials'>
+        <img id='pink-ribbon' className='element' src="/assets/pink-ribbon.png" alt="" />
         <div className='wrapper'>
           <div className='text text--half'>
             <p className='mini-title'>Arcadia Testimonials</p>
@@ -188,32 +189,40 @@ export default function Page() {
           </div>
           
           <div className='testimonial-container'>
-            <Testimonial 
-              id='keanu'
-              person='Keanu Reaves'
-              src='keanu.avif'
-              description='I’ve been a fan of anime for years, and Arcadia feels like the ultimate place for fans. Their app Asobu makes modding games a breeze.'
-            />
-            <Testimonial 
-              id='lebron'
-              person='LeBron James'
-              src='lebron.jpg'
-              description='Arcadia is signature, just like my taco tuesdays. I’ve used Tsunagu and Shiru to finally understand what Bronny meant by “Diamond on Siege”.'
-            />
-            <Testimonial 
-              id='aoba'
-              flip
-              person='Aoba'
-              src='aoba.png'
-              description='Arcadia allowed me to find my dream games from my favorite company. When I heard they were partnering up, I couldnt let the opporitunity slip. Thank you Team Arcadia!'
-            />
-            <Testimonial 
-              id='jamaal'
-              flip
-              person='Jamaal Williams'
-              src='jamaal.jpg'
-              description='This is like the ultimate training ground for otaku. Everything you need: tracking, merch, community. All in one place.'
-            />
+            <FadeIn direction='down' delay={.2}>
+              <Testimonial 
+                id='keanu'
+                person='Keanu Reaves'
+                src='keanu.avif'
+                description='I’ve been a fan of anime for years, and Arcadia feels like the ultimate place for fans. Their app Asobu makes modding games a breeze.'
+              />
+            </FadeIn>
+            <FadeIn direction='left' delay={.3}>
+              <Testimonial 
+                id='lebron'
+                person='LeBron James'
+                src='lebron.jpg'
+                description='Arcadia is signature, just like my taco tuesdays. I’ve used Tsunagu and Shiru to finally understand what Bronny meant by “Diamond on Siege”.'
+              />
+            </FadeIn>
+            <FadeIn direction='right' delay={.6}>
+              <Testimonial 
+                id='aoba'
+                flip
+                person='Aoba'
+                src='aoba.png'
+                description='Arcadia allowed me to find my dream games from my favorite company. When I heard they were partnering up, I couldnt let the opporitunity slip. Thank you Team Arcadia!'
+              />
+            </FadeIn>
+            <FadeIn direction='up' delay={.4}>
+              <Testimonial 
+                id='jamaal'
+                flip
+                person='Jamaal Williams'
+                src='jamaal.jpg'
+                description='This is like the ultimate training ground for otaku. Everything you need: tracking, merch, community. All in one place.'
+              />
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -241,6 +250,8 @@ export default function Page() {
       </div>
 
       <section id='stack'>
+        <img id='triple-lines-one' className='element desktop-only' src="/assets/triple-lines-one.png" alt="" />
+        <img id='triple-lines-two' className='element desktop-only' src="/assets/triple-lines-two.png" alt="" />
         <div className='wrapper'>
           <div id='technologies'>
             <div className='text'>

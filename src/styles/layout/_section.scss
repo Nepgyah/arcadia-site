@@ -7,9 +7,12 @@ section {
 
     .element {
         position: absolute;
+        z-index: 1;
     }
 
     .wrapper {
+        position: relative;
+        z-index: 2;
         max-width: 1320px;
         margin: auto;
         padding: 0 20px;

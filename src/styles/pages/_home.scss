@@ -169,6 +169,12 @@
     }
 
     #testimonials {
+
+        #pink-ribbon {
+            top: 75%;
+            transform: translateY(-75%);
+        }
+
         .testimonial-container {
             display: flex;
             flex-direction: column;
@@ -183,7 +189,8 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 column-gap: 1rem;
-                
+                height: 100%;
+
                 .chakra-card__root {
                     background-color: map.get($colors, arc-base);
                     border: none;
@@ -206,6 +213,16 @@
     }
 
     #stack {
+
+        #triple-lines-one {
+            top: 5%;
+        }
+
+        #triple-lines-two {
+            bottom: 8rem;
+            right: 0;
+        }
+
         #technologies {
             display: flex;
             flex-direction: column;
