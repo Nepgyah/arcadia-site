@@ -16,6 +16,7 @@
 
 html {
     background-color: #FFF6E1;
+    scroll-behavior: smooth;
 
     body {
         position: relative;
@@ -27,6 +28,11 @@ html {
             min-height: 100dvh;
             font-size: 18px;
             color: map.get($colors, txt-dark);
+            
+            .button-container {
+                display: flex;
+                column-gap: 1rem;
+            }
         }
     }
 }

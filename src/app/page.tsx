@@ -12,26 +12,43 @@ export default function Page() {
     <div id="page-home">
       
       <div id="hero">
-        <img className='bg' src="/pages/home/hero-background.png" alt="" />
+        <img className='bg' src="/pages/home/hero-background.jpg" alt="" />
         <div className='mask'></div>
-        <img id='furina' className='element desktop-only' src="/pages/home/queen_one.png" alt="" />
+        <div className='collaboration desktop bg-arc-base-dark clr-txt-light p-a-md shadow'>
+          <p>In collaboration with:</p>
+          <div className='m-t-sm'>
+            <img src="/pages/home/hero/collaboration/adventure-guild.png" alt="" />
+            <img src="/pages/home/hero/collaboration/astral-express.png" alt="" />
+            <img src="/pages/home/hero/collaboration/endfield-industries.png" alt="" />
+            <img src="/pages/home/hero/collaboration/schale.webp" alt="" />
+          </div>
+        </div>
+        <img id='queens' className='element desktop-only' src="/pages/home/queens.png" alt="" />
         <div className="wrapper">
           <div>
             <div className='hero-text'>
               <h1>Your <HeroSlider /> <br />Your Way</h1>
-              <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p>
-              <div className="cta-container">
+              {/* <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p> */}
+              <div className="button-container">
                 <a href="https://arcadia-platform.vercel.app" target="_blank">
                   <Button className='primary'>
-                    Explore Arcadia
+                    Enter Arcadia
+                  </Button>
+                </a>
+                <a href="#primary-apps">
+                  <Button className='secondary'>
+                    Explore Apps
                   </Button>
                 </a>
               </div>
-              <div className='bg-arc-base-dark clr-txt-light p-a-md border-radius-md shadow'>
-                <p><b>Latest Release - Alpha v0.4</b></p>
-                <ul>
-                  <li>- Linked account system to D2X</li>
-                </ul>
+              <div className='collaboration mobile bg-arc-base-dark clr-txt-light p-a-md shadow'>
+                <p>In collaboration with:</p>
+                <div className='m-t-sm'>
+                  <img src="/pages/home/hero/collaboration/adventure-guild.png" alt="" />
+                  <img src="/pages/home/hero/collaboration/astral-express.png" alt="" />
+                  <img src="/pages/home/hero/collaboration/endfield-industries.png" alt="" />
+                  <img src="/pages/home/hero/collaboration/schale.webp" alt="" />
+                </div>
               </div>
               <div id='main-points'></div>
             </div>

@@ -3,6 +3,28 @@
 
 #page-home {
     #hero {
+
+        .collaboration {
+
+            > div {
+                display: flex;
+                column-gap: 1rem;
+                
+                img {
+                    height: 90px;
+                }
+            }
+
+            &.mobile {
+                border-radius: 12px;
+
+                > div {
+                    justify-content: center;
+                }
+            }
+            
+        }
+
         .mask {
             background: linear-gradient(to bottom, rgba(#59304D, 0) 50%, #59304D 100%);
         }
@@ -11,6 +33,9 @@
             display: inline;
         }
 
+        #queens {
+            display: none;
+        }
         #slider-container {
             padding: .25rem 1rem;
             display: inline-table;
@@ -29,6 +54,10 @@
                     transform: translateY(-4px);
                 }
             }
+        }
+
+        .hero-text {
+            color: white;
         }
     }
 
@@ -392,14 +421,26 @@
 @media only screen and (min-width: 900px) {
     #page-home {
         #hero {
-            .wrapper {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 2rem;
+
+            .collaboration {
+                &.desktop {
+                    position: absolute;
+                    z-index: 4;
+                    bottom: 15%;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                }
+
+                &.mobile {
+                    display: none;
+                }
             }
 
-            #furina {
-                right: 20px;
+            #queens {
+                display: block;
+                width: 60%;
+                right: 0;
+                bottom: 0;
             }
         }
 
@@ -576,6 +617,13 @@
 
 @media only screen and (min-width: 1200px) {
     #page-home {
+        #hero {
+            #wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+            }
+        }
         #stack {
             #tech-feats {
                 > div {
