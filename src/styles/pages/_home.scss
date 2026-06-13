@@ -62,6 +62,10 @@
     }
 
     #catchphrase {
+        #catchphrase-line-one {
+            right: 0;
+        }
+
         #part-one, #part-two {
             display: flex;
             flex-direction: column;
@@ -75,6 +79,10 @@
                 margin: auto;
             }
         }
+    }
+
+    #about {
+        
     }
 
     #sponsor {
@@ -459,6 +467,30 @@
             }
         }
 
+        #about {
+            #jp-banner {
+                left: 0;
+                top: 0;
+                width: 600px;
+            }
+            #anime-world {
+                top: 100px;
+                left: 0;
+                height: 650px;
+            }
+            #slogan-banner {
+                top: 600px;
+            }
+            #arcadia-world {
+                top: 95px;
+                width: 100%;
+            }
+
+            .wrapper {
+                min-height: 600px;
+            }
+        }
+
         #sponsor {
             .wrapper {
                 > div {
@@ -622,6 +654,15 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 column-gap: 2rem;
+            }
+        }
+
+        #about {
+            .wrapper {
+                min-height: 850px;
+                .about-text {
+                    font-size: 2.5rem;
+                }
             }
         }
         #stack {

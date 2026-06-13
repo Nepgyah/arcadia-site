@@ -57,31 +57,35 @@ export default function Page() {
         </div>
       </div>
       
-      <div className='bg-gradient-one'>
-        <section id='catchphrase' className='clr-txt-light'>
-          <div className='wrapper'>
-            <div id='part-one'>
-              <div>
-                <FadeIn direction='right'>
-                  <img src="/pages/home/catchphrase-one.png" alt="" />
-                </FadeIn>
-              </div>
-              <div className='center-v'>
-                <h2>Your Otaku</h2>
-              </div>
+      <section id='catchphrase' className='bg-gradient-one clr-txt-light'>
+        <img id='catchphrase-line-one' className='element' src="/assets/triple-lines-two.png" alt="" />
+        <div className='wrapper'>
+          <div id='part-one'>
+            <div>
+              <FadeIn direction='right'>
+                <img src="/pages/home/catchphrase-one.png" alt="" />
+              </FadeIn>
             </div>
-            <div id='part-two'>
-              <div className='center-b'>
-                <h2 className='clr-arc-highlight'>Sanctuary</h2>
-              </div>
-              <div>
-                <FadeIn direction='left'>
-                  <img src="/pages/home/catchphrase-two.png" alt="" />
-                </FadeIn>
-              </div>
+            <div className='center-v'>
+              <h2>Your Otaku</h2>
             </div>
           </div>
-        </section>
+          <div id='part-two'>
+            <div className='center-b'>
+              <h2 className='clr-arc-highlight'>Sanctuary</h2>
+            </div>
+            <div>
+              <FadeIn direction='left'>
+                <img src="/pages/home/catchphrase-two.png" alt="" />
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       {/* <section id='about'>
+          
+        </section> */}
         <section id='sponsor'>
           <img id='broken-circle' className='element' src="/assets/broken-circle.svg" alt="" />
           <div className='wrapper'>
@@ -195,7 +199,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-      </div>
 
       <section id='testimonials'>
         <img id='pink-ribbon' className='element' src="/assets/pink-ribbon.png" alt="" />
