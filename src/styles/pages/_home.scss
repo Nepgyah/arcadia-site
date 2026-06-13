@@ -82,7 +82,30 @@
     }
 
     #about {
-        
+        #jp-banner {
+            top: 0;
+            height: 80px;
+        }
+
+        .text {
+            min-height: 450px;
+            justify-content: center;
+            row-gap: 3rem;
+
+            > div {
+                position: relative;
+                
+                > div {
+                    padding: .75rem;
+                    border-radius: 12px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -25px;
+                    position: absolute;
+                    background-color: map.get($colors, arc-accent);
+                }
+            }
+        }
     }
 
     #sponsor {
@@ -468,26 +491,29 @@
         }
 
         #about {
+
             #jp-banner {
-                left: 0;
-                top: 0;
-                width: 600px;
+                top: -50px;
+                height: 80px;
+                z-index: 2;
             }
-            #anime-world {
-                top: 100px;
-                left: 0;
-                height: 650px;
+
+            #about-anime-world {
+                height: 100%;
+                bottom: 0;
             }
-            #slogan-banner {
-                top: 600px;
-            }
-            #arcadia-world {
-                top: 95px;
+            
+            #jp-slogan {
+                bottom: -40px;
                 width: 100%;
             }
 
-            .wrapper {
-                min-height: 600px;
+            .text {
+                > div { 
+                    > div {
+                       left: 35px;
+                    }
+                }
             }
         }
 
@@ -658,11 +684,9 @@
         }
 
         #about {
-            .wrapper {
-                min-height: 850px;
-                .about-text {
-                    font-size: 2.5rem;
-                }
+            #jp-slogan {
+                bottom: -75px;
+                width: 100%;
             }
         }
         #stack {

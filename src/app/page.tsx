@@ -57,31 +57,58 @@ export default function Page() {
         </div>
       </div>
       
-      <section id='catchphrase' className='bg-gradient-one clr-txt-light'>
-        <img id='catchphrase-line-one' className='element' src="/assets/triple-lines-two.png" alt="" />
-        <div className='wrapper'>
-          <div id='part-one'>
-            <div>
-              <FadeIn direction='right'>
-                <img src="/pages/home/catchphrase-one.png" alt="" />
-              </FadeIn>
+      <div className='bg-gradient-one'>
+        <section id='catchphrase' className='clr-txt-light'>
+          <img id='catchphrase-line-one' className='element' src="/assets/triple-lines-two.png" alt="" />
+          <div className='wrapper'>
+            <div id='part-one'>
+              <div>
+                <FadeIn direction='right'>
+                  <img src="/pages/home/catchphrase-one.png" alt="" />
+                </FadeIn>
+              </div>
+              <div className='center-v'>
+                <h2>Your Otaku</h2>
+              </div>
             </div>
-            <div className='center-v'>
-              <h2>Your Otaku</h2>
+            <div id='part-two'>
+              <div className='center-b'>
+                <h2 className='clr-arc-highlight'>Sanctuary</h2>
+              </div>
+              <div>
+                <FadeIn direction='left'>
+                  <img src="/pages/home/catchphrase-two.png" alt="" />
+                </FadeIn>
+              </div>
             </div>
           </div>
-          <div id='part-two'>
-            <div className='center-b'>
-              <h2 className='clr-arc-highlight'>Sanctuary</h2>
-            </div>
-            <div>
-              <FadeIn direction='left'>
-                <img src="/pages/home/catchphrase-two.png" alt="" />
-              </FadeIn>
+        </section>
+
+        <section id='about'>
+          <img id='jp-banner' className='element' src="/pages/home/jp-banner.png" alt="" />
+          <img id='about-anime-world' className='element desktop-only' src="/pages/home/anime-world.png" alt="" />
+          <img id='jp-slogan' className='element desktop-only' src="/pages/home/jp-slogan.png" alt="" />
+          <div className='wrapper'>
+            <div className='layout layout--two-col'>
+              <div></div>
+              <div className='text'>
+                <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
+                  <div>What is Arcadia</div>
+                  <p>An ecosystem of the biggest Otaku spaces. Whether you're watching anime, reading manga, discovering music, attending conventions, or exploring new games, Arcadia has a community for you.</p>
+                </div>
+                <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
+                  <div>Why we made Arcadia</div>
+                  <p>No need for multiple logins and accounts. Arcadia combines the communities you need and want, all in one place. Switch between your worlds within seconds.</p>
+                </div>
+                <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
+                  <div>Who Arcadia is for</div>
+                  <p>Anime, manga, gaming, music, and conventions are more than hobbies—they're communities, stories, and experiences that connect people across the world. Arcadia is built for those who cherish them.</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
        {/* <section id='about'>
           

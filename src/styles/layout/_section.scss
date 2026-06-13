@@ -42,6 +42,12 @@ section {
             font-size: .78rem;
         }
     }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -52,10 +58,12 @@ section {
             }
         }
 
-        .layout-two-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 2rem;
+        .layout {
+            &--two-col {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+            }
         }
     }
 }
