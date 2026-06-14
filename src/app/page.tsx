@@ -3,7 +3,7 @@ import { Button, Card } from '@chakra-ui/react';
 import HeroSlider from '../components/pages/home/heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
-import { Blocks, Layers, LayoutTemplate, Link, TestTube, Webhook } from 'lucide-react';
+import { Blocks, Building2, Cpu, Earth, Heart, Layers, LayoutTemplate, Link, Sprout, TestTube, UsersRound, Webhook } from 'lucide-react';
 import HomeCaseStudy from '@/components/pages/home/caseStudy';
 import { Tooltip } from '@/components/ui/tooltip';
 
@@ -110,9 +110,38 @@ export default function Page() {
         </section>
       </div>
 
-       {/* <section id='about'>
-          
-        </section> */}
+      <section id='features'>
+        <img id='sakura-tree' className='element desktop-only' src="/assets/sakura-tree.png" alt="" />
+        <div className='wrapper'>
+          <div className='text text--half'>
+            <p className='mini-title'>The Arcadia Difference</p>
+            <h2>Project Arcadia: <br />The Flagship <span className='clr-arc-accent'>Otaku Platform</span></h2>
+          </div>
+          <div id='features-container'>
+            <div className='feature-row'>
+              <IconFeature icon={Earth} title='One account. Endless possibilities.' description='Arcadia unites every corner of your fandom under a single login.'/>
+              <IconFeature icon={Building2} title='Direct Connections' description='Official partnerships with studios for authentic experiences'/>
+              <div className='desktop-only'></div>
+            </div>
+            <div className='feature-row'>
+              <IconFeature icon={UsersRound} title='Made for every fan' description='Customize your profile, track your interests, and receive recommendations tailored to the things you love most.'/>
+              <div className='desktop-only'>
+                <img id='arcadia-mask' src="/logos/arcadia-mask.png" alt="" />
+              </div>
+              <IconFeature icon={Cpu} title='Modern Technologies' description='Built with modern frameworks to adapt to whatever comes next'/>
+            </div>
+            <div className='feature-row'>
+              <div className='desktop-only'></div>
+              <IconFeature icon={Sprout} title='Constantly evolving' description='Arcadia is always looking for ways to improve, whether features or QoLs'/>
+              <IconFeature icon={Heart} title='By fans, for fans' description='Every feature is created with a genuine appreciation for the communities, stories, and hobbies that inspire us'/>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+
+      <div className='bg-gradient-one'>
         <section id='sponsor'>
           <img id='broken-circle' className='element' src="/assets/broken-circle.svg" alt="" />
           <div className='wrapper'>
@@ -149,9 +178,9 @@ export default function Page() {
                 </div>
               </div>
               <div className='center-v'>
-                <div className='text text--white'>
+                <div className='text clr-txt-light'>
                   <p className='mini-title'>Arcadia Partners</p>
-                  <h2>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
+                  <h2 className='clr-txt-light'>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
                   <p>Anime Studios, Game Developers, and more collaborate with Arcadia to build something special. </p>
                   <p><b>Names used here are purely fictional for Arcadia/D2X world building. These companies do not sponsor or endorse Arcadia.</b></p>
                 </div>
@@ -159,6 +188,7 @@ export default function Page() {
             </div>
           </div>
         </section>
+
         <section id='primary-apps'>
           <div className='wrapper'>
             <div>
@@ -226,7 +256,8 @@ export default function Page() {
             </div>
           </div>
         </section>
-
+      </div>
+      
       <section id='testimonials'>
         <img id='pink-ribbon' className='element' src="/assets/pink-ribbon.png" alt="" />
         <div className='wrapper'>
@@ -274,26 +305,13 @@ export default function Page() {
         </div>
       </section>
 
-      {/* At a glance */}
+      {/* Glance */}
+
 
       <div className='bg-gradient-one'>
-        <section id='cc-highlight'>
-          <div className='wrapper'>
-            <FadeIn direction='right'>
-              <img src="/pages/home/robin-splash.png" />
-            </FadeIn>
-            <div>
-              <div className='text text--white'>
-                <p className='mini-title'>Featured Content Creator</p>
-                <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
-                <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
-                <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <HomeCaseStudy />
+        
+        {/* CTA */}
       </div>
 
       <section id='stack'>
@@ -387,6 +405,23 @@ export default function Page() {
         </div>
       </section>
 
+      {/* <section id='cc-highlight'>
+          <div className='wrapper'>
+            <FadeIn direction='right'>
+              <img src="/pages/home/robin-splash.png" />
+            </FadeIn>
+            <div>
+              <div className='text text--white'>
+                <p className='mini-title'>Featured Content Creator</p>
+                <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
+                <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
+                <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+      {/* FAQ */}
     </div>
   )
 }

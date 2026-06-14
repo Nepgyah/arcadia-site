@@ -108,9 +108,30 @@
         }
     }
 
+    #features {
+        #features-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            .feature-row {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+
+                .icon-feature {
+                    &__icon {
+                        background-color: map.get($colors, arc-accent);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
     #sponsor {
         #broken-circle {
-            top: -50px;
+            bottom: -50px;
         }
 
         #sponsor-container {
@@ -517,6 +538,30 @@
             }
         }
 
+        #features {
+
+            #sakura-tree {
+                right: 0;
+                width: 50%;
+            }
+            
+            #features-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+
+                .feature-row {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 1rem;
+
+                    .desktop-only {
+                        display: none;
+                    }
+                }
+            }
+        }
+
         #sponsor {
             .wrapper {
                 > div {
@@ -689,6 +734,29 @@
                 width: 100%;
             }
         }
+
+        #features {
+            #features-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+
+                .feature-row {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 1rem;
+
+                    &:nth-child(2) {
+                        align-items: center;
+                    }
+
+                    .desktop-only {
+                        display: block;
+                    }
+                }
+            }
+        }
+
         #stack {
             #tech-feats {
                 > div {
