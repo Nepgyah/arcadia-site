@@ -147,35 +147,33 @@ export default function Page() {
           <div className='wrapper'>
             <div>
               <div id='sponsor-container'>
-                <div className='sponsor-card'>
+                <FadeIn direction='up' className='sponsor-card' delay={.1}>
                   <img src="/sponsors/eagle-jump.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.2}>
                   <img src="/sponsors/astral-express.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.3}>
                   <img src="/sponsors/aniplex-white.svg" alt="" />
-                </div>
-
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.4}>
                   <img src="/sponsors/fromsoft.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.5}>
                   <img src="/sponsors/hoyoverse-white.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.6}>
                   <img src="/sponsors/jc-staff.png" alt="" />
-                </div>
-
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.7}>
                   <img src="/sponsors/myanimelist.svg" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.8}>
                   <img src="/sponsors/nexon-white.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.9}>
                   <img src="/sponsors/yostar-white.svg" alt="" />
-                </div>
+                </FadeIn>
               </div>
               <div className='center-v'>
                 <div className='text clr-txt-light'>
