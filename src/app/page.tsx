@@ -303,8 +303,12 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Glance */}
-
+      {/* TODO: */}
+      <section id='at-a-glance'>
+        <div className='wrapper'>
+          <div className='stat-container'></div>
+        </div>
+      </section>
 
       <div className='bg-gradient-one'>
         <HomeCaseStudy />
