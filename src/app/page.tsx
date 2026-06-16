@@ -68,16 +68,26 @@ export default function Page() {
                 </FadeIn>
               </div>
               <div className='center-v'>
-                <h2>Your Otaku</h2>
+                <h2>Built For Fans</h2>
               </div>
             </div>
             <div id='part-two'>
+              <div id='part-two-image'>
+                <FadeIn direction='right'>
+                  <img src="/pages/home/catchphrase-two.png" alt="" />
+                </FadeIn>
+              </div>
               <div className='center-b'>
-                <h2 className='clr-arc-highlight'>Sanctuary</h2>
+                <h2>Powered By Passion</h2>
+              </div>
+            </div>
+            <div id='part-three'>
+              <div className='center-b'>
+                <h2 className='clr-arc-highlight'>United Through Arcadia</h2>
               </div>
               <div>
                 <FadeIn direction='left'>
-                  <img src="/pages/home/catchphrase-two.png" alt="" />
+                  <img src="/pages/home/catchphrase-three.png" alt="" />
                 </FadeIn>
               </div>
             </div>
@@ -92,6 +102,7 @@ export default function Page() {
             <div className='layout layout--two-col'>
               <div></div>
               <div className='text'>
+                
                 <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
                   <div>What is Arcadia</div>
                   <p>An ecosystem of the biggest Otaku spaces. Whether you're watching anime, reading manga, discovering music, attending conventions, or exploring new games, Arcadia has a community for you.</p>
@@ -139,7 +150,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
 
       <div className='bg-gradient-one'>
         <section id='sponsor'>
@@ -306,7 +316,38 @@ export default function Page() {
       {/* TODO: */}
       <section id='at-a-glance'>
         <div className='wrapper'>
-          <div className='stat-container'></div>
+          <div className='stat-container'>
+            <div id='title-tile'>
+              <h2 className='clr-txt-light'><span className='clr-arc-highlight'>Arcadia</span> at a Glance</h2>
+            </div>
+            <div id='image-tile'>
+              <img src="/pages/home/sunset.png" alt="" />
+            </div>
+            <div id='asobu-tile' className='stat-tile'>
+              <p className='value'>7</p>
+              <p className='app'>Games</p>
+            </div>
+            <div id='miru-tile' className='stat-tile'>
+              <p className='value'>8</p>
+              <p className='app'>Anime</p>
+            </div>
+            <div id='yomu-tile' className='stat-tile'>
+              <p className='value'>0</p>
+              <p className='app'>Manga</p>
+            </div>
+            <div id='iku-tile' className='stat-tile'>
+              <p className='value'>26</p>
+              <p className='app'>Events</p>
+            </div>
+            <div id='filler-one'>
+              <img src="/pages/home/furina.png" alt="" />
+            </div>
+            <div id='filler-two'>two</div>
+            <div id='filler-three'>three</div>
+            <div id='filler-four'>
+              <img src="/pages/home/umas.png" alt="" />
+            </div>
+          </div>
         </div>
       </section>
 
