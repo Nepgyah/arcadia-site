@@ -3,7 +3,7 @@ import { Button, Card } from '@chakra-ui/react';
 import HeroSlider from '../components/pages/home/heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
-import { Blocks, Building2, Cpu, Earth, Heart, Layers, LayoutTemplate, Link, Sprout, TestTube, UsersRound, Webhook } from 'lucide-react';
+import { Blocks, Book, Building2, Cpu, Earth, Gamepad2, Heart, Layers, LayoutTemplate, Link, Music, Sprout, TestTube, Ticket, Tv, UsersRound, Webhook } from 'lucide-react';
 import HomeCaseStudy from '@/components/pages/home/caseStudy';
 import { Tooltip } from '@/components/ui/tooltip';
 
@@ -123,6 +123,7 @@ export default function Page() {
 
       <section id='features'>
         <img id='sakura-tree' className='element desktop-only' src="/assets/sakura-tree.png" alt="" />
+        <img id='feature-gate' className='element' src="/assets/gate-1.png" alt="" />
         <div className='wrapper'>
           <div className='text text--half'>
             <p className='mini-title'>The Arcadia Difference</p>
@@ -313,7 +314,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* TODO: */}
       <section id='at-a-glance'>
         <div className='wrapper'>
           <div className='stat-container'>
@@ -342,8 +342,15 @@ export default function Page() {
             <div id='filler-one'>
               <img src="/pages/home/furina.png" alt="" />
             </div>
-            <div id='filler-two'>two</div>
-            <div id='filler-three'>three</div>
+            <div id='filler-two'>
+              <Tv />
+              <Gamepad2 />
+              <Book />
+            </div>
+            <div id='filler-three'>
+              <Music />
+              <Ticket />
+            </div>
             <div id='filler-four'>
               <img src="/pages/home/umas.png" alt="" />
             </div>

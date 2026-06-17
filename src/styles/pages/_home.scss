@@ -120,6 +120,11 @@
     }
 
     #features {
+
+        #feature-gate {
+            display: none;
+        }
+
         #features-container {
             display: flex;
             flex-direction: column;
@@ -897,6 +902,13 @@
         }
 
         #features {
+
+            #feature-gate {
+                display: block;
+                bottom: -1px;
+                left: 5%;
+            }
+
             #features-container {
                 display: flex;
                 flex-direction: column;
@@ -978,15 +990,25 @@
                     }
 
                     #filler-two {
-                        display: block;
                         grid-column: 5 / 7;
                         grid-row: 1;
                     }
                     
                     #filler-three {
-                        display: block;
                         grid-column: 6 / 8;
                         grid-row: 2;
+                    }
+
+                    #filler-two, #filler-three {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 2rem;
+
+                        svg {
+                            transform: scale(2);
+                            color: map.get($colors, arc-accent);
+                        }
                     }
 
                     #filler-four {
@@ -994,6 +1016,7 @@
                         grid-column: 5 / 8;
                         grid-row: 3;
                     }
+
                 }
             }
         }
