@@ -805,6 +805,19 @@
             }
         }
 
+        #cta {
+            min-height: 650px;
+
+            #cta-sunset {
+                object-fit: cover;
+                height: 100%;
+                width: 60%;
+                top: 0;
+                right: 0;
+                clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+            }
+        }
+        
         #stack {
             #technologies {
                 display: grid;

@@ -362,6 +362,26 @@ export default function Page() {
         <HomeCaseStudy />
         
         {/* CTA */}
+        <section id='cta'>
+          <img id='cta-sunset' className='element desktop-only' src="/pages/home/sunset.png" alt="" />
+          <div className='wrapper'>
+            <div className='layout layout--two-col'>
+              <div>
+                <div className='text text--white'>
+                  <p className='mini-title'>Get Started</p>
+                  <h2>Ready to Enter Arcadia?</h2>
+                  <p>Set up your account and get started exploring anime, manga and games. Your own otaku world is just clicks away.</p>
+                  <div className='button-container'>
+                    <a href="https://arcadia-platform.vercel.app/auth" target='_blank'>
+                      <Button variant={'solid'} className='primary'>Explore Arcadia</Button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className='desktop-only'></div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <section id='stack'>
