@@ -458,7 +458,14 @@ export default function Page() {
 
       <section id='d2x'>
         <div className='wrapper'>
-          <div className='text'>
+          <div className='layout layout--three-col'>
+            <div>
+              <img src="/pages/home/d2x-interns.png" alt="" />
+            </div>
+            <div>two</div>
+            <div>three</div>
+          </div>
+          {/* <div className='text'>
             <p className='mini-title'>Who We Are</p>
             <h2>Born From Fandom, Forged With Passion</h2>
             <p>Team Double Dragon was forged upon passion: passion for Esports and passion for doing things the right way and for the right things.</p>
@@ -471,7 +478,7 @@ export default function Page() {
           </div>
           <div className='center-b'>
             <img src="/logos/d2x.svg" alt="" />
-          </div>
+          </div> */}
         </div>
       </section>
 

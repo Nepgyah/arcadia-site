@@ -64,6 +64,24 @@ section {
                 grid-template-columns: 1fr 1fr;
                 column-gap: 2rem;
             }
+
+            &--three-col {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    section {
+        .layout {
+            &--three-col {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 2rem;
+            }
         }
     }
 }
