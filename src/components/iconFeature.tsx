@@ -2,11 +2,11 @@ import { LucideIcon } from "lucide-react";
 
 export default function IconFeature(
     {
-        icon: Icon, title, description
+        icon: Icon, title, description = null
     } : {
         icon: LucideIcon,
         title: string,
-        description: string
+        description: string | null
     }
 ) {
     return (
@@ -16,7 +16,9 @@ export default function IconFeature(
             </div>
             <div className="icon-feature__text">
                 <h3>{title}</h3>
-                <p>{description}</p>
+                {
+                    description && <p>{description}</p>
+                }
             </div>
         </div>
     )

@@ -404,6 +404,25 @@
         }
     }
 
+    #d2x {
+
+        &__fangyi {
+            max-height: 150px;
+        }
+
+        #fangyi {
+            height: 200px;
+            bottom: 0;
+            right: 50%;
+        }
+        .icon-feature {
+            &__icon {
+                background-color: map.get($colors, arc-base);
+                color: white;
+            }
+        }
+    }
+
     #cc-highlight {
         img {
             max-height: 400px;
@@ -571,7 +590,6 @@
 @media only screen and (min-width: 900px) {
     #page-home {
         #hero {
-
             .collaboration {
                 &.desktop {
                     position: absolute;
@@ -583,6 +601,12 @@
 
                 &.mobile {
                     display: none;
+                }
+
+                > div {
+                    img {
+                        height: 90px;
+                    }
                 }
             }
 
@@ -793,8 +817,23 @@
         }
 
         #d2x {
-            
-        }
+
+            &__fangyi {
+                height: 300px;
+            }
+
+            #fangyi {
+                height: 350px;
+                bottom: 0;
+                left: 10%;
+            }
+            .icon-feature {
+                &__icon {
+                    background-color: map.get($colors, arc-base);
+                    color: white;
+                }
+            }
+    }
 
         #cta {
             min-height: 650px;
@@ -944,6 +983,15 @@
                         width: 60%;
                     }
                 }
+            }
+        }
+
+        #d2x {
+            #yukong {
+                display: block;
+                right: 10%;
+                max-height: 400px;
+
             }
         }
 

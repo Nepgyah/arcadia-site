@@ -3,7 +3,7 @@ import { Button, Card } from '@chakra-ui/react';
 import HeroSlider from '../components/pages/home/heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
-import { Blocks, Book, Building2, Cpu, Earth, Gamepad2, Heart, Layers, LayoutTemplate, Link, Music, Sprout, TestTube, Ticket, Tv, UsersRound, Webhook } from 'lucide-react';
+import { Blocks, Book, Building2, Cpu, Earth, Gamepad2, Heart, Layers, LayoutTemplate, Link, Map, Mic2, Music, Sprout, TestTube, Ticket, Tv, Users, UsersRound, Webhook } from 'lucide-react';
 import HomeCaseStudy from '@/components/pages/home/caseStudy';
 import { Tooltip } from '@/components/ui/tooltip';
 
@@ -457,28 +457,37 @@ export default function Page() {
       </section>
 
       <section id='d2x'>
+        <img id='fangyi' src="/pages/home/fangyi.png" className='element' alt="" />
         <div className='wrapper'>
-          <div className='layout layout--three-col'>
+          <div id='d2x__overview' className='layout layout--three-col'>
             <div>
               <img src="/pages/home/d2x-interns.png" alt="" />
             </div>
-            <div>two</div>
-            <div>three</div>
+            <div className='text'>
+              <p className='mini-title'>Team Double Dragon</p>
+              <h2>Make Things Happen At D2X</h2>
+              <p>We focus on building a space where fandom, creativity and technology can come together. Flexible and chill where it counts, but serious when it comes to quality and impact. </p>
+              <p>No template or molds to fill at D2X. Come as you are. Grow how you want. Let’s make something unforgettable.</p>
+            </div>
+            <div className='flex flex--vertical flex--center-vertical flex--row-gap-md'>
+              <IconFeature icon={Users} title='50+ Members' description={null} />
+              <IconFeature icon={Map} title='8 Locations' description={null} />
+              <IconFeature icon={Mic2} title='30 Yearly Karaoke Nights' description={null} />
+            </div>
           </div>
-          {/* <div className='text'>
-            <p className='mini-title'>Who We Are</p>
-            <h2>Born From Fandom, Forged With Passion</h2>
-            <p>Team Double Dragon was forged upon passion: passion for Esports and passion for doing things the right way and for the right things.</p>
-            <p>What started with what-ifs and no technical skill, Arcadia began with two friends, countless fandom debates, and a dream to build the otaku platform we always wished existed.</p>
-            <a href="https://d2x-site.vercel.app" target='_blank'>
-              <Button className='primary'>
-                Visit D2X Today
-              </Button>
-            </a>
+          <div id='d2x__quote'>
+            <div className='layout layout--two-col'>
+              <div className='text'>
+                <p className='mini-title'>Message from a founder</p>
+                <h2>Motivated By Passion, The D2X Way</h2>
+              </div>
+              <div className='text'>
+                <p>"At D2X, passion is at the heart of everything we create. We believe the communities built around anime, games, music, and storytelling deserve platforms designed by people who genuinely share those interests. That's what inspires us every day.</p>
+                <p>Our goal is to build experiences that bring fans together, foster connections, and create a place where everyone feels they belong. As we grow, we'll continue to be guided by the same passion that started this journey."</p>
+              </div>
+            </div>
           </div>
-          <div className='center-b'>
-            <img src="/logos/d2x.svg" alt="" />
-          </div> */}
+          <div id='d2x__fangyi'></div>
         </div>
       </section>
 
