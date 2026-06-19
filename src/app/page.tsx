@@ -1,5 +1,5 @@
 import '@/styles/pages/_home.scss';
-import { Button, Card } from '@chakra-ui/react';
+import { Accordion, Button, Card } from '@chakra-ui/react';
 import HeroSlider from '../components/pages/home/heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
@@ -509,6 +509,34 @@ export default function Page() {
         </section> */}
 
       {/* FAQ */}
+
+      <section id='faq' className='bg-arc-base-dark'>
+        <div className='wrapper'>
+          <div className='layout layout--two-col'>
+            <div className='text text--white'>
+              <p className='mini-title'>FAQ</p>
+              <h2>Got Questions for Your Otaku Space?</h2>
+            </div>
+            <div id='questions'>
+              <Accordion.Root collapsible>
+                {
+                  faq.map((node: FAQ, idx: number) => (
+                    <Accordion.Item key={idx} value={String(idx)} className='clr-txt-light'>
+                      <Accordion.ItemTrigger>
+                        <span>{node.question}</span>
+                        <Accordion.ItemIndicator />
+                      </Accordion.ItemTrigger>
+                      <Accordion.ItemContent>
+                        <Accordion.ItemBody>{node.answer}</Accordion.ItemBody>
+                      </Accordion.ItemContent>
+                    </Accordion.Item>
+                  ))
+                }
+              </Accordion.Root>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
@@ -531,3 +559,15 @@ function Testimonial(
     </div>
   )
 }
+
+interface FAQ {
+  question: string,
+  answer: string
+}
+const faq: FAQ[] = [
+  { question: "Do I have access to all the apps?", answer: "Yes, you have access to all the Arcadia apps with a single account. There is no extra payment or exclusive paywall apps."},
+  { question: "Is Arcadia free to use?", answer: "Yes, Arcadia and all its core features are free to use. The only time you would need to pay is for custom profile cosmetics or to donate to help fund project Arcadia."},
+  { question: "How do you differ from similar platforms?", answer: "Though you can find similar solutions that are more built out, Arcadia's main point is that you have them all in one central places, making it easer to manage your hobbies. Arcadia aims to also fill in missing quality of life features from those platforms and fit them here."},
+  { question: "Will more apps be added in the future?", answer: "Yes, we plan to add on to Arcadia in the future. Currently we are focusing on the core apps but if we find a community or niche grow big enough, we will be happy to add it to the project pipeline!"},
+  { question: "Is Arcadia actually affiliated with any studios, publishers or developer?", answer: "No, though Arcadia functions as a full platform, all of the content here is purely for world building for the Arcadia platform. If one day the platform truly takes off, we will for sure attempt to work with companies directly to make sure you are getting the best experience you can."},
+]
