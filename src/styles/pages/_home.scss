@@ -404,6 +404,12 @@
         }
     }
 
+    #cta {
+        #cta-circle-set {
+            top: 0;
+        }
+    }
+
     #d2x {
 
         &__fangyi {
@@ -837,6 +843,12 @@
 
         #cta {
             min-height: 650px;
+
+            #cta-circle-set {
+                top: -55px;
+                width: 15%;
+                left: 20px;
+            }
 
             #cta-sunset {
                 object-fit: cover;

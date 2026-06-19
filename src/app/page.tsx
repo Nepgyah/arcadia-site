@@ -363,6 +363,7 @@ export default function Page() {
         
         {/* CTA */}
         <section id='cta'>
+          <img id='cta-circle-set' src="/assets/circle-set.png" className='element' alt="" />
           <img id='cta-sunset' className='element desktop-only' src="/pages/home/sunset.png" alt="" />
           <div className='wrapper'>
             <div className='layout layout--two-col'>
