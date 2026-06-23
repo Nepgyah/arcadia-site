@@ -1,9 +1,9 @@
 import '@/styles/pages/_home.scss';
-import { Button, Card } from '@chakra-ui/react';
+import { Accordion, Button, Card } from '@chakra-ui/react';
 import HeroSlider from '../components/pages/home/heroSlider';
 import FadeIn from '@/components/animation/fadeIn';
 import IconFeature from '@/components/iconFeature';
-import { Blocks, Layers, LayoutTemplate, Link, TestTube, Webhook } from 'lucide-react';
+import { Blocks, Book, Building2, Cpu, Earth, Gamepad2, Heart, Layers, LayoutTemplate, Link, Map, Mic2, Music, Sprout, TestTube, Ticket, Tv, Users, UsersRound, Webhook } from 'lucide-react';
 import HomeCaseStudy from '@/components/pages/home/caseStudy';
 import { Tooltip } from '@/components/ui/tooltip';
 
@@ -12,26 +12,43 @@ export default function Page() {
     <div id="page-home">
       
       <div id="hero">
-        <img className='bg' src="/pages/home/hero-background.png" alt="" />
+        <img className='bg' src="/pages/home/hero-background.jpg" alt="" />
         <div className='mask'></div>
-        <img id='furina' className='element desktop-only' src="/pages/home/queen_one.png" alt="" />
+        <div className='collaboration desktop bg-arc-base-dark clr-txt-light p-a-md shadow'>
+          <p>In collaboration with:</p>
+          <div className='m-t-sm'>
+            <img src="/pages/home/hero/collaboration/adventure-guild.png" alt="" />
+            <img src="/pages/home/hero/collaboration/astral-express.png" alt="" />
+            <img src="/pages/home/hero/collaboration/endfield-industries.png" alt="" />
+            <img src="/pages/home/hero/collaboration/schale.webp" alt="" />
+          </div>
+        </div>
+        <img id='queens' className='element desktop-only' src="/pages/home/queens.png" alt="" />
         <div className="wrapper">
           <div>
             <div className='hero-text'>
               <h1>Your <HeroSlider /> <br />Your Way</h1>
-              <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p>
-              <div className="cta-container">
+              {/* <p>Arcadia is your home base for everything otaku. Where fans come together to celebrate what they love and find something new.</p> */}
+              <div className="button-container">
                 <a href="https://arcadia-platform.vercel.app" target="_blank">
                   <Button className='primary'>
-                    Explore Arcadia
+                    Enter Arcadia
+                  </Button>
+                </a>
+                <a href="#primary-apps">
+                  <Button className='secondary'>
+                    Explore Apps
                   </Button>
                 </a>
               </div>
-              <div className='bg-arc-base-dark clr-txt-light p-a-md border-radius-md shadow'>
-                <p><b>Latest Release - Alpha v0.4</b></p>
-                <ul>
-                  <li>- Linked account system to D2X</li>
-                </ul>
+              <div className='collaboration mobile bg-arc-base-dark clr-txt-light p-a-md shadow'>
+                <p>In collaboration with:</p>
+                <div className='m-t-sm'>
+                  <img src="/pages/home/hero/collaboration/adventure-guild.png" alt="" />
+                  <img src="/pages/home/hero/collaboration/astral-express.png" alt="" />
+                  <img src="/pages/home/hero/collaboration/endfield-industries.png" alt="" />
+                  <img src="/pages/home/hero/collaboration/schale.webp" alt="" />
+                </div>
               </div>
               <div id='main-points'></div>
             </div>
@@ -42,6 +59,7 @@ export default function Page() {
       
       <div className='bg-gradient-one'>
         <section id='catchphrase' className='clr-txt-light'>
+          <img id='catchphrase-line-one' className='element' src="/assets/triple-lines-two.png" alt="" />
           <div className='wrapper'>
             <div id='part-one'>
               <div>
@@ -50,60 +68,128 @@ export default function Page() {
                 </FadeIn>
               </div>
               <div className='center-v'>
-                <h2>Your Otaku</h2>
+                <h2>Built For Fans</h2>
               </div>
             </div>
             <div id='part-two'>
+              <div id='part-two-image'>
+                <FadeIn direction='right'>
+                  <img src="/pages/home/catchphrase-two.png" alt="" />
+                </FadeIn>
+              </div>
               <div className='center-b'>
-                <h2 className='clr-arc-highlight'>Sanctuary</h2>
+                <h2>Powered By Passion</h2>
+              </div>
+            </div>
+            <div id='part-three'>
+              <div className='center-b'>
+                <h2 className='clr-arc-highlight'>United Through Arcadia</h2>
               </div>
               <div>
                 <FadeIn direction='left'>
-                  <img src="/pages/home/catchphrase-two.png" alt="" />
+                  <img src="/pages/home/catchphrase-three.png" alt="" />
                 </FadeIn>
               </div>
             </div>
           </div>
         </section>
+
+        <section id='about'>
+          <img id='jp-banner' className='element' src="/pages/home/jp-banner.png" alt="" />
+          <img id='about-anime-world' className='element desktop-only' src="/pages/home/anime-world.png" alt="" />
+          <img id='jp-slogan' className='element desktop-only' src="/pages/home/jp-slogan.png" alt="" />
+          <div className='wrapper'>
+            <div className='layout layout--two-col'>
+              <div></div>
+              <div className='text'>
+                
+                <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
+                  <div>What is Arcadia</div>
+                  <p>An ecosystem of the biggest Otaku spaces. Whether you're watching anime, reading manga, discovering music, attending conventions, or exploring new games, Arcadia has a community for you.</p>
+                </div>
+                <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
+                  <div>Why we made Arcadia</div>
+                  <p>No need for multiple logins and accounts. Arcadia combines the communities you need and want, all in one place. Switch between your worlds within seconds.</p>
+                </div>
+                <div className='p-a-lg bg-arc-base clr-txt-light border-radius-md shadow'>
+                  <div>Who Arcadia is for</div>
+                  <p>Anime, manga, gaming, music, and conventions are more than hobbies—they're communities, stories, and experiences that connect people across the world. Arcadia is built for those who cherish them.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id='features'>
+        <img id='sakura-tree' className='element desktop-only' src="/assets/sakura-tree.png" alt="" />
+        <img id='feature-gate' className='element' src="/assets/gate-1.png" alt="" />
+        <div className='wrapper'>
+          <div className='text text--half'>
+            <p className='mini-title'>The Arcadia Difference</p>
+            <h2>Project Arcadia: <br />The Flagship <span className='clr-arc-accent'>Otaku Platform</span></h2>
+          </div>
+          <div id='features-container'>
+            <div className='feature-row'>
+              <IconFeature icon={Earth} title='One account. Endless possibilities.' description='Arcadia unites every corner of your fandom under a single login.'/>
+              <IconFeature icon={Building2} title='Direct Connections' description='Official partnerships with studios for authentic experiences'/>
+              <div className='desktop-only'></div>
+            </div>
+            <div className='feature-row'>
+              <IconFeature icon={UsersRound} title='Made for every fan' description='Customize your profile, track your interests, and receive recommendations tailored to the things you love most.'/>
+              <div className='desktop-only'>
+                <img id='arcadia-mask' src="/logos/arcadia-mask.png" alt="" />
+              </div>
+              <IconFeature icon={Cpu} title='Modern Technologies' description='Built with modern frameworks to adapt to whatever comes next'/>
+            </div>
+            <div className='feature-row'>
+              <div className='desktop-only'></div>
+              <IconFeature icon={Sprout} title='Constantly evolving' description='Arcadia is always looking for ways to improve, whether features or QoLs'/>
+              <IconFeature icon={Heart} title='By fans, for fans' description='Every feature is created with a genuine appreciation for the communities, stories, and hobbies that inspire us'/>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <div className='bg-gradient-one'>
         <section id='sponsor'>
           <img id='broken-circle' className='element' src="/assets/broken-circle.svg" alt="" />
           <div className='wrapper'>
             <div>
               <div id='sponsor-container'>
-                <div className='sponsor-card'>
+                <FadeIn direction='up' className='sponsor-card' delay={.1}>
                   <img src="/sponsors/eagle-jump.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.2}>
                   <img src="/sponsors/astral-express.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.3}>
                   <img src="/sponsors/aniplex-white.svg" alt="" />
-                </div>
-
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.4}>
                   <img src="/sponsors/fromsoft.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.5}>
                   <img src="/sponsors/hoyoverse-white.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.6}>
                   <img src="/sponsors/jc-staff.png" alt="" />
-                </div>
-
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.7}>
                   <img src="/sponsors/myanimelist.svg" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.8}>
                   <img src="/sponsors/nexon-white.png" alt="" />
-                </div>
-                <div className='sponsor-card'>
+                </FadeIn>
+                <FadeIn direction='up' className='sponsor-card' delay={.9}>
                   <img src="/sponsors/yostar-white.svg" alt="" />
-                </div>
+                </FadeIn>
               </div>
               <div className='center-v'>
-                <div className='text text--white'>
+                <div className='text clr-txt-light'>
                   <p className='mini-title'>Arcadia Partners</p>
-                  <h2>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
+                  <h2 className='clr-txt-light'>Industry Leaders <span className='clr-arc-highlight'>Collab</span> With Arcadia</h2>
                   <p>Anime Studios, Game Developers, and more collaborate with Arcadia to build something special. </p>
                   <p><b>Names used here are purely fictional for Arcadia/D2X world building. These companies do not sponsor or endorse Arcadia.</b></p>
                 </div>
@@ -111,6 +197,7 @@ export default function Page() {
             </div>
           </div>
         </section>
+
         <section id='primary-apps'>
           <div className='wrapper'>
             <div>
@@ -179,7 +266,7 @@ export default function Page() {
           </div>
         </section>
       </div>
-
+      
       <section id='testimonials'>
         <img id='pink-ribbon' className='element' src="/assets/pink-ribbon.png" alt="" />
         <div className='wrapper'>
@@ -227,26 +314,75 @@ export default function Page() {
         </div>
       </section>
 
-      {/* At a glance */}
+      <section id='at-a-glance'>
+        <div className='wrapper'>
+          <div className='stat-container'>
+            <div id='title-tile'>
+              <h2 className='clr-txt-light'><span className='clr-arc-highlight'>Arcadia</span> at a Glance</h2>
+            </div>
+            <div id='image-tile'>
+              <img src="/pages/home/sunset.png" alt="" />
+            </div>
+            <div id='asobu-tile' className='stat-tile'>
+              <p className='value'>7</p>
+              <p className='app'>Games</p>
+            </div>
+            <div id='miru-tile' className='stat-tile'>
+              <p className='value'>8</p>
+              <p className='app'>Anime</p>
+            </div>
+            <div id='yomu-tile' className='stat-tile'>
+              <p className='value'>0</p>
+              <p className='app'>Manga</p>
+            </div>
+            <div id='iku-tile' className='stat-tile'>
+              <p className='value'>26</p>
+              <p className='app'>Events</p>
+            </div>
+            <div id='filler-one'>
+              <img src="/pages/home/furina.png" alt="" />
+            </div>
+            <div id='filler-two'>
+              <Tv />
+              <Gamepad2 />
+              <Book />
+            </div>
+            <div id='filler-three'>
+              <Music />
+              <Ticket />
+            </div>
+            <div id='filler-four'>
+              <img src="/pages/home/umas.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className='bg-gradient-one'>
-        <section id='cc-highlight'>
+        <HomeCaseStudy />
+        
+        {/* CTA */}
+        <section id='cta'>
+          <img id='cta-circle-set' src="/assets/circle-set.png" className='element' alt="" />
+          <img id='cta-sunset' className='element desktop-only' src="/pages/home/sunset.png" alt="" />
           <div className='wrapper'>
-            <FadeIn direction='right'>
-              <img src="/pages/home/robin-splash.png" />
-            </FadeIn>
-            <div>
-              <div className='text text--white'>
-                <p className='mini-title'>Featured Content Creator</p>
-                <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
-                <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
-                <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
+            <div className='layout layout--two-col'>
+              <div>
+                <div className='text text--white'>
+                  <p className='mini-title'>Get Started</p>
+                  <h2>Ready to Enter Arcadia?</h2>
+                  <p>Set up your account and get started exploring anime, manga and games. Your own otaku world is just clicks away.</p>
+                  <div className='button-container'>
+                    <a href="https://arcadia-platform.vercel.app/auth" target='_blank'>
+                      <Button variant={'solid'} className='primary'>Explore Arcadia</Button>
+                    </a>
+                  </div>
+                </div>
               </div>
+              <div className='desktop-only'></div>
             </div>
           </div>
         </section>
-
-        <HomeCaseStudy />
       </div>
 
       <section id='stack'>
@@ -322,24 +458,85 @@ export default function Page() {
       </section>
 
       <section id='d2x'>
+        <img id='fangyi' src="/pages/home/fangyi.png" className='element' alt="" />
         <div className='wrapper'>
-          <div className='text'>
-            <p className='mini-title'>Who We Are</p>
-            <h2>Born From Fandom, Forged With Passion</h2>
-            <p>Team Double Dragon was forged upon passion: passion for Esports and passion for doing things the right way and for the right things.</p>
-            <p>What started with what-ifs and no technical skill, Arcadia began with two friends, countless fandom debates, and a dream to build the otaku platform we always wished existed.</p>
-            <a href="https://d2x-site.vercel.app" target='_blank'>
-              <Button className='primary'>
-                Visit D2X Today
-              </Button>
-            </a>
+          <div id='d2x__overview' className='layout layout--three-col'>
+            <div>
+              <img src="/pages/home/d2x-interns.png" alt="" />
+            </div>
+            <div className='text'>
+              <p className='mini-title'>Team Double Dragon</p>
+              <h2>Make Things Happen At D2X</h2>
+              <p>We focus on building a space where fandom, creativity and technology can come together. Flexible and chill where it counts, but serious when it comes to quality and impact. </p>
+              <p>No template or molds to fill at D2X. Come as you are. Grow how you want. Let’s make something unforgettable.</p>
+            </div>
+            <div className='flex flex--vertical flex--center-vertical flex--row-gap-md'>
+              <IconFeature icon={Users} title='50+ Members' description={null} />
+              <IconFeature icon={Map} title='8 Locations' description={null} />
+              <IconFeature icon={Mic2} title='30 Yearly Karaoke Nights' description={null} />
+            </div>
           </div>
-          <div className='center-b'>
-            <img src="/logos/d2x.svg" alt="" />
+          <div id='d2x__quote'>
+            <div className='layout layout--two-col'>
+              <div className='text'>
+                <p className='mini-title'>Message from a founder</p>
+                <h2>Motivated By Passion, The D2X Way</h2>
+              </div>
+              <div className='text'>
+                <p>"At D2X, passion is at the heart of everything we create. We believe the communities built around anime, games, music, and storytelling deserve platforms designed by people who genuinely share those interests. That's what inspires us every day.</p>
+                <p>Our goal is to build experiences that bring fans together, foster connections, and create a place where everyone feels they belong. As we grow, we'll continue to be guided by the same passion that started this journey."</p>
+              </div>
+            </div>
           </div>
+          <div id='d2x__fangyi'></div>
         </div>
       </section>
 
+      {/* <section id='cc-highlight'>
+          <div className='wrapper'>
+            <FadeIn direction='right'>
+              <img src="/pages/home/robin-splash.png" />
+            </FadeIn>
+            <div>
+              <div className='text text--white'>
+                <p className='mini-title'>Featured Content Creator</p>
+                <h2>The Virtuoso of Penacony Steps onto the <span className='clr-arc-highlight'>Arcadian Stage</span></h2>
+                <p>Known for her breathtaking performances that inspire harmony across worlds, Robin now streams exclusive concerts and creative sessions on Todokeru, connecting with fans through the universal language of music.</p>
+                <p>Her arrival marks a new chapter in Arcadia’s creator ecosystem: where passion, art, and fandom intertwine to build something extraordinary.</p>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+      {/* FAQ */}
+
+      <section id='faq' className='bg-arc-base-dark'>
+        <div className='wrapper'>
+          <div className='layout layout--two-col'>
+            <div className='text text--white'>
+              <p className='mini-title'>FAQ</p>
+              <h2>Got Questions for Your Otaku Space?</h2>
+            </div>
+            <div id='questions'>
+              <Accordion.Root collapsible>
+                {
+                  faq.map((node: FAQ, idx: number) => (
+                    <Accordion.Item key={idx} value={String(idx)} className='clr-txt-light'>
+                      <Accordion.ItemTrigger>
+                        <span>{node.question}</span>
+                        <Accordion.ItemIndicator />
+                      </Accordion.ItemTrigger>
+                      <Accordion.ItemContent>
+                        <Accordion.ItemBody>{node.answer}</Accordion.ItemBody>
+                      </Accordion.ItemContent>
+                    </Accordion.Item>
+                  ))
+                }
+              </Accordion.Root>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
@@ -362,3 +559,15 @@ function Testimonial(
     </div>
   )
 }
+
+interface FAQ {
+  question: string,
+  answer: string
+}
+const faq: FAQ[] = [
+  { question: "Do I have access to all the apps?", answer: "Yes, you have access to all the Arcadia apps with a single account. There is no extra payment or exclusive paywall apps."},
+  { question: "Is Arcadia free to use?", answer: "Yes, Arcadia and all its core features are free to use. The only time you would need to pay is for custom profile cosmetics or to donate to help fund project Arcadia."},
+  { question: "How do you differ from similar platforms?", answer: "Though you can find similar solutions that are more built out, Arcadia's main point is that you have them all in one central places, making it easer to manage your hobbies. Arcadia aims to also fill in missing quality of life features from those platforms and fit them here."},
+  { question: "Will more apps be added in the future?", answer: "Yes, we plan to add on to Arcadia in the future. Currently we are focusing on the core apps but if we find a community or niche grow big enough, we will be happy to add it to the project pipeline!"},
+  { question: "Is Arcadia actually affiliated with any studios, publishers or developer?", answer: "No, though Arcadia functions as a full platform, all of the content here is purely for world building for the Arcadia platform. If one day the platform truly takes off, we will for sure attempt to work with companies directly to make sure you are getting the best experience you can."},
+]

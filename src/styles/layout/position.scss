@@ -1,0 +1,41 @@
+.center {
+    display: flex;
+
+    &--vertical {
+        align-items: center;
+    }
+
+    &--horizontal {
+        justify-content: center;
+    }
+}
+
+.flex {
+    display: flex;
+
+    &--center {
+        &-vertical {
+            justify-content: center;
+        }
+
+        &-horizontal {
+            align-items: center;
+        }
+    }
+
+    &--vertical {
+        flex-direction: column;
+    }
+
+    &--row-gap-sm {
+        row-gap: .75rem;
+    }
+
+    &--row-gap-md {
+        row-gap: 1rem;
+    }
+
+    &--row-gap-lg {
+        row-gap: 2rem;
+    }
+}

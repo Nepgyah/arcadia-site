@@ -3,12 +3,41 @@
 
 #page-home {
     #hero {
+
+        .collaboration {
+
+            > div {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 1rem;
+                
+                img {
+                    height: 64px;
+                }
+            }
+
+            &.mobile {
+                border-radius: 12px;
+
+                > div {
+                    justify-content: center;
+                }
+            }
+            
+        }
+
         .mask {
+            bottom: 0;
             background: linear-gradient(to bottom, rgba(#59304D, 0) 50%, #59304D 100%);
         }
 
         h1 {
             display: inline;
+            font-size: 3rem;
+        }
+
+        #queens {
+            display: none;
         }
 
         #slider-container {
@@ -30,27 +59,95 @@
                 }
             }
         }
+
+        .hero-text {
+            color: white;
+        }
     }
 
     #catchphrase {
-        #part-one, #part-two {
+        #catchphrase-line-one {
+            right: 0;
+        }
+
+        #part-one, #part-three {
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
             text-align: center;
             
-            h2 {
-                font-size: 5rem;
-            }
             img {
                 margin: auto;
+            }
+        }
+
+        #part-two {
+            #part-two-image {
+                display: none;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    #about {
+        #jp-banner {
+            top: 0;
+            height: 80px;
+        }
+
+        .text {
+            min-height: 450px;
+            justify-content: center;
+            row-gap: 3rem;
+
+            > div {
+                position: relative;
+                
+                > div {
+                    padding: .75rem;
+                    border-radius: 12px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -25px;
+                    position: absolute;
+                    background-color: map.get($colors, arc-accent);
+                }
+            }
+        }
+    }
+
+    #features {
+
+        #feature-gate {
+            display: none;
+        }
+
+        #features-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+
+            .feature-row {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+
+                .icon-feature {
+                    &__icon {
+                        background-color: map.get($colors, arc-accent);
+                        color: white;
+                    }
+                }
             }
         }
     }
 
     #sponsor {
         #broken-circle {
-            top: -50px;
+            bottom: -50px;
         }
 
         #sponsor-container {
@@ -186,9 +283,9 @@
             #jamaal { order: 4; }
 
             .testimonial {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 1rem;
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
                 height: 100%;
 
                 .chakra-card__root {
@@ -212,6 +309,46 @@
         }
     }
 
+    #at-a-glance {
+        .wrapper {
+            .stat-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+
+                .stat-tile {
+                    text-align: center;
+                    color: map.get($colors, txt-light);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .value {
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                    }
+                }
+
+                > div {
+                    padding: 12px;
+                    border-radius: 12px;
+                    background-color: map.get($colors, arc-accent-dark);
+                    box-shadow: 0 4px 4px rgba(#000000, .25);
+                }
+
+                #image-tile, #filler-one, #filler-two, #filler-three, #filler-four {
+                    display: none;
+                    padding: 0;
+                }
+
+                #title-tile {
+                    grid-column: 1 / 3;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
     #stack {
 
         #triple-lines-one {
@@ -230,7 +367,7 @@
 
             #stack-container {
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
                 align-items: center;
                 justify-items: center;
@@ -263,6 +400,31 @@
                         color: white;
                     }
                 }
+            }
+        }
+    }
+
+    #cta {
+        #cta-circle-set {
+            top: 0;
+        }
+    }
+
+    #d2x {
+
+        &__fangyi {
+            max-height: 150px;
+        }
+
+        #fangyi {
+            height: 200px;
+            bottom: 0;
+            right: 50%;
+        }
+        .icon-feature {
+            &__icon {
+                background-color: map.get($colors, arc-base);
+                color: white;
             }
         }
     }
@@ -324,9 +486,12 @@
                     }
         
                     .stats {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        column-gap: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 1rem;
+                        // display: grid;
+                        // grid-template-columns: 1fr 1fr;
+                        // column-gap: 1rem;
         
                         .icon-feature {
                             &__icon {
@@ -389,17 +554,73 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+    #page-home {
+
+        #catchphrase {
+            h2 {
+                font-size: 4rem;
+            }
+        }
+
+        #stack {
+            #technologies {
+                #stack-container {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #page-home {
+
+        #hero {
+            h1 {
+                font-size: 6rem;
+            }
+        }
+        #testimonials {
+            .testimonial-container {
+                .testimonial {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 1rem;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 900px) {
     #page-home {
         #hero {
-            .wrapper {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 2rem;
+            .collaboration {
+                &.desktop {
+                    position: absolute;
+                    z-index: 4;
+                    bottom: 15%;
+                    border-top-right-radius: 12px;
+                    border-bottom-right-radius: 12px;
+                }
+
+                &.mobile {
+                    display: none;
+                }
+
+                > div {
+                    img {
+                        height: 90px;
+                    }
+                }
             }
 
-            #furina {
-                right: 20px;
+            #queens {
+                display: block;
+                width: 60%;
+                right: 0;
+                bottom: 0;
             }
         }
 
@@ -412,9 +633,71 @@
             }
 
             #part-two {
+
+                #part-two-image {
+                    display: block;
+                }
+                
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 column-gap: 1rem;
+            }
+
+            #part-three {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 1rem;
+            }
+        }
+
+        #about {
+
+            #jp-banner {
+                top: -50px;
+                height: 80px;
+                z-index: 2;
+            }
+
+            #about-anime-world {
+                height: 100%;
+                bottom: 0;
+            }
+            
+            #jp-slogan {
+                bottom: -40px;
+                width: 100%;
+            }
+
+            .text {
+                > div { 
+                    > div {
+                       left: 35px;
+                    }
+                }
+            }
+        }
+
+        #features {
+
+            #sakura-tree {
+                right: 0;
+                width: 50%;
+            }
+            
+            #features-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+
+                .feature-row {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 1rem;
+
+                    .desktop-only {
+                        display: none;
+                    }
+                }
             }
         }
 
@@ -482,16 +765,98 @@
             }
         }
 
-        #d2x {
+        #at-a-glance {
             .wrapper {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 4rem;
+                .stat-container {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(4, 150px);
+                    gap: 1rem;
 
-                img {
-                    height: 75%;
-                    width: 75%;
+                    .stat-tile {
+                        .value {
+                            font-size: 4rem;
+                        }
+                    }
+
+                    #image-tile {
+                        display: block;
+                        padding: 0;
+                        overflow: hidden;
+                        
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    #title-tile {
+                        grid-column: 1/4;
+                        grid-row: 1;
+                    }
+
+                    #image-tile {
+                        grid-column: 1 / 3;
+                        grid-row: 2 / 4;
+                    }
+
+                    #miru-tile {
+                        grid-column: 3;
+                        grid-row: 3;
+                    }
+
+                    #asobu-tile {
+                        grid-column: 3;
+                        grid-row: 4;
+                    }
+
+                    #filler-four {
+                        display: block;
+                        grid-column: 2;
+                        grid-row: 4;
+                        overflow: hidden;
+                        padding: 0;
+                    }
                 }
+            }
+        }
+
+        #d2x {
+
+            &__fangyi {
+                height: 300px;
+            }
+
+            #fangyi {
+                height: 350px;
+                bottom: 0;
+                left: 10%;
+            }
+            .icon-feature {
+                &__icon {
+                    background-color: map.get($colors, arc-base);
+                    color: white;
+                }
+            }
+    }
+
+        #cta {
+            min-height: 650px;
+
+            #cta-circle-set {
+                top: -55px;
+                width: 15%;
+                left: 20px;
+            }
+
+            #cta-sunset {
+                object-fit: cover;
+                height: 100%;
+                width: 60%;
+                top: 0;
+                right: 0;
+                clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
             }
         }
 
@@ -576,6 +941,50 @@
 
 @media only screen and (min-width: 1200px) {
     #page-home {
+        #hero {
+            #wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2rem;
+            }
+        }
+
+        #about {
+            #jp-slogan {
+                bottom: -75px;
+                width: 100%;
+            }
+        }
+
+        #features {
+
+            #feature-gate {
+                display: block;
+                bottom: -1px;
+                left: 5%;
+            }
+
+            #features-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+
+                .feature-row {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 1rem;
+
+                    &:nth-child(2) {
+                        align-items: center;
+                    }
+
+                    .desktop-only {
+                        display: block;
+                    }
+                }
+            }
+        }
+
         #stack {
             #tech-feats {
                 > div {
@@ -585,6 +994,93 @@
                     > div {
                         width: 60%;
                     }
+                }
+            }
+        }
+
+        #d2x {
+            #yukong {
+                display: block;
+                right: 10%;
+                max-height: 400px;
+
+            }
+        }
+
+        #at-a-glance {
+            .wrapper {
+                .stat-container {
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    grid-template-rows: repeat(3, 175px);
+                    gap: 1rem;
+
+                    #image-tile {
+                        display: block;
+                    }
+
+                    #title-tile {
+                        grid-column: 1 / 3;
+                        grid-row: 1;
+                    }
+
+                    #image-tile {
+                        grid-column: 1 / 4;
+                        grid-row: 2 / 4;
+                    }
+
+                    #miru-tile {
+                        grid-column: 3;
+                        grid-row: 1;
+                    }
+
+                    #asobu-tile {
+                        grid-column: 4;
+                        grid-row: 3;
+                    }
+                    
+                    #filler-one {
+                        display: block;
+                        grid-column: 4;
+                        grid-row: 1 / 3;
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            bottom: 0;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    #filler-two {
+                        grid-column: 5 / 7;
+                        grid-row: 1;
+                    }
+                    
+                    #filler-three {
+                        grid-column: 6 / 8;
+                        grid-row: 2;
+                    }
+
+                    #filler-two, #filler-three {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: 2rem;
+
+                        svg {
+                            transform: scale(2);
+                            color: map.get($colors, arc-accent);
+                        }
+                    }
+
+                    #filler-four {
+                        display: block;
+                        grid-column: 5 / 8;
+                        grid-row: 3;
+                    }
+
                 }
             }
         }

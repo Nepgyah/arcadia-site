@@ -2,9 +2,14 @@
     font-weight: bold;
     color: white;
     box-shadow: 0 4px 4px rgba(#000000, .25);
+    width: fit-content;
 
     &.primary {
         background-color: #C54B61;
+    }
+
+    &.secondary {
+        background-color: #505477;
     }
 }
 
@@ -12,6 +17,10 @@
     &-sm { border-radius: 8px; }
     &-md { border-radius: 12px; }
     &-lg { border-radius: 18px; }
+}
+
+.fit-content {
+    width: fit-content;
 }
 
 .shadow {
@@ -60,4 +69,8 @@
 
 .bg-gradient-one {
     background: linear-gradient(to bottom, #59304D, #2F324B);
+}
+
+.gradient-primary-vertical {
+    background: linear-gradient(to bottom, #2F324B, #505477);
 }
